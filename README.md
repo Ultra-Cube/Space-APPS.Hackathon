@@ -2,6 +2,21 @@
 
 A semantic search engine for space biology research publications using AI-powered embeddings and vector similarity search.
 
+## 🆕 What's New
+
+**Latest Updates:**
+- ✨ **AI-Powered Summaries**: New `/summarize/{pub_id}` endpoint generates intelligent publication summaries
+- 🎨 **Web Interface**: Beautiful, responsive frontend for easy searching and browsing
+- 🔍 **Smart Search**: JavaScript-powered search with term highlighting and instant results
+- 📱 **Mobile Friendly**: Works seamlessly on desktop, tablet, and mobile devices
+- 📚 **Enhanced Documentation**: Comprehensive guides for quick start, deployment, and features
+
+**Quick Start:**
+1. Install: `pip install -r requirements.txt`
+2. Start: `uvicorn app:app --reload`
+3. Browse: Open `http://localhost:8000` in your browser
+4. Search: Enter a query and explore the results!
+
 ## 🚀 Overview
 
 This project provides a complete pipeline for ingesting, processing, and semantically searching scientific publications related to space biology. It downloads publications from PubMed Central (PMC), extracts their content, generates semantic embeddings, and provides a FastAPI-based search interface.
@@ -109,6 +124,13 @@ graph LR
         D --> I[/health]
         D --> J[/search?q=...&k=5]
         D --> K[/pub/PMC_ID]
+        D --> L[/summarize/PMC_ID - NEW]
+    end
+    
+    subgraph "Frontend - NEW"
+        M[Web Interface] --> |Search Queries| J
+        M --> |Summary Requests| L
+        M --> |Publication Requests| K
     end
     
     F --> A
@@ -116,6 +138,8 @@ graph LR
     style B fill:#ffeb99
     style C fill:#99ccff
     style D fill:#99ff99
+    style L fill:#ff9999
+    style M fill:#ff9999
 ```
 
 ## 🛠️ Installation
