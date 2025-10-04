@@ -1,6 +1,73 @@
 // API Base URL - adjust if needed
 const API_BASE_URL = window.location.origin;
 
+const popularQueries = [
+    { label: "Bone loss in microgravity", query: "bone loss in microgravity countermeasures" },
+    { label: "Space radiation shielding", query: "radiation shielding astronauts" },
+    { label: "Immune response in space", query: "immune dysregulation long duration spaceflight" },
+    { label: "Microbiome shifts", query: "spaceflight microbiome alterations" }
+];
+
+const libraryCollections = [
+    {
+        title: "Bone Health & Countermeasures",
+        description: "Discover interventions that mitigate skeletal deterioration in microgravity, from pharmaceuticals to exercise protocols.",
+        tags: ["physiology", "countermeasure", "bone"],
+        pubId: "PMC5666799",
+        query: "microgravity bone loss countermeasures"
+    },
+    {
+        title: "Radiation Biology Essentials",
+        description: "Key findings on shielding, dose response, and cellular repair mechanisms under cosmic radiation exposure.",
+        tags: ["radiation", "cellular", "mission"],
+        pubId: "PMC3630201",
+        query: "space radiation cellular damage"
+    },
+    {
+        title: "Muscle Atrophy Insights",
+        description: "Track proteomic and transcriptomic changes that drive muscle deconditioning during long-duration missions.",
+        tags: ["physiology", "omics", "mission"],
+        pubId: "PMC6222041",
+        query: "spaceflight muscle atrophy omics"
+    },
+    {
+        title: "Immune Modulation",
+        description: "Evidence of altered immune cell signaling, latent virus reactivation, and potential countermeasures in orbit.",
+        tags: ["immunology", "health", "countermeasure"],
+        pubId: "PMC7998608",
+        query: "spaceflight immune dysregulation"
+    },
+    {
+        title: "Microbiome & Biofilms",
+        description: "Studies cataloguing microbial community shifts and biofilm behavior in spacecraft environments.",
+        tags: ["microbiome", "environment", "mission"],
+        pubId: "PMC6813909",
+        query: "spaceflight microbiome biofilm"
+    },
+    {
+        title: "Vision Impairment & Fluid Shifts",
+        description: "Research on cephalad fluid shifts, ocular changes, and the suspected mechanisms behind SANS.",
+        tags: ["physiology", "neuroscience", "mission"],
+        pubId: "PMC5460236",
+        query: "spaceflight vision impairment sans"
+    }
+];
+
+const libraryFilterCatalog = [
+    { id: "all", label: "All Topics" },
+    { id: "physiology", label: "Physiology" },
+    { id: "countermeasure", label: "Countermeasures" },
+    { id: "radiation", label: "Radiation" },
+    { id: "immunology", label: "Immune Health" },
+    { id: "microbiome", label: "Microbiome" },
+    { id: "mission", label: "Mission Planning" },
+    { id: "omics", label: "Omics" },
+    { id: "health", label: "Crew Health" },
+    { id: "environment", label: "Environment" },
+    { id: "neuroscience", label: "Neuroscience" },
+    { id: "bone", label: "Bone Biology" }
+];
+
 // Initialize event listeners when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Add enter key support for search
@@ -17,6 +84,11 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('searchInput').value = query;
         performSearch();
     }
+
+    buildPopularQueryChips();
+    populateQuickStats();
+    renderLibraryFilters();
+    renderLibraryItems();
 });
 
 /**
@@ -303,3 +375,133 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+function buildPopularQueryChips() {
+    const container = document.getElementById('popularQueries');
+    if (!container) return;
+
+    const fragment = document.createDocumentFragment();
+    popularQueries.forEach(({ label, query }) => {
+        const button = document.createElement('button');
+        button.className = 'chip';
+        button.type = 'button';
+        button.textContent = label;
+        button.dataset.query = query;
+        button.addEventListener('click', () => {
+            document.getElementById('searchInput').value = query;
+            performSearch();
+        });
+        fragment.appendChild(button);
+    });
+
+    container.appendChild(fragment);
+}
+
+async function populateQuickStats() {
+    const chunksEl = document.getElementById('statChunks');
+    const publicationsEl = document.getElementById('statPublications');
+
+    if (publicationsEl) {
+        publicationsEl.textContent = libraryCollections.length.toString();
+    }
+
+    if (!chunksEl) return;
+
+    try {
+        const response = await fetch(`${API_BASE_URL}/health`);
+        if (!response.ok) {
+            throw new Error('Health endpoint unavailable');
+        }
+        const data = await response.json();
+        chunksEl.textContent = formatNumber(data.n_chunks ?? 0);
+    } catch (error) {
+        chunksEl.textContent = '—';
+        console.warn('Unable to load quick stats', error);
+    }
+}
+
+function renderLibraryFilters() {
+    const filtersContainer = document.getElementById('libraryFilters');
+    if (!filtersContainer) return;
+
+    const relevantFilters = libraryFilterCatalog.filter(filter => {
+        if (filter.id === 'all') return true;
+        return libraryCollections.some(item => item.tags.includes(filter.id));
+    });
+
+    relevantFilters.forEach((filter, index) => {
+        const button = document.createElement('button');
+        button.className = `library-filter${index === 0 ? ' active' : ''}`;
+        button.type = 'button';
+        button.dataset.filter = filter.id;
+        button.textContent = filter.label;
+        button.addEventListener('click', () => {
+            document.querySelectorAll('.library-filter').forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            renderLibraryItems(filter.id);
+        });
+        filtersContainer.appendChild(button);
+    });
+}
+
+function renderLibraryItems(activeFilter = 'all') {
+    const grid = document.getElementById('libraryGrid');
+    if (!grid) return;
+
+    const filteredItems = libraryCollections.filter(item => {
+        if (activeFilter === 'all') return true;
+        return item.tags.includes(activeFilter);
+    });
+
+    if (filteredItems.length === 0) {
+        grid.innerHTML = `
+            <div class="no-results" style="grid-column: 1 / -1;">
+                <h3>No collections yet</h3>
+                <p>We are expanding this topic—check back soon or try a different filter.</p>
+            </div>
+        `;
+        return;
+    }
+
+    grid.innerHTML = filteredItems.map(item => `
+        <article class="library-card">
+            <h3>${escapeHtml(item.title)}</h3>
+            <p>${escapeHtml(item.description)}</p>
+            <div class="library-tags">
+                ${item.tags.map(tag => `<span class="tag">${escapeHtml(formatTag(tag))}</span>`).join('')}
+            </div>
+            <div class="library-actions">
+                <button class="btn btn-primary" type="button" onclick="prefillAndSearch('${escapeAttribute(item.query)}')">Search Topic</button>
+                ${item.pubId ? `<button class="btn btn-secondary" type="button" onclick="viewFullPublication('${item.pubId}')">View Publication</button>` : ''}
+                ${item.pubId ? `<button class="btn btn-secondary" type="button" onclick="viewSummary('${item.pubId}')">AI Summary</button>` : ''}
+            </div>
+        </article>
+    `).join('');
+}
+
+function prefillAndSearch(query) {
+    const searchInput = document.getElementById('searchInput');
+    if (!searchInput) return;
+    searchInput.value = query;
+    performSearch();
+}
+
+function formatNumber(num) {
+    return Number(num).toLocaleString();
+}
+
+function formatTag(tag) {
+    return tag
+        .split('-')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+}
+
+function escapeAttribute(text) {
+    return text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}

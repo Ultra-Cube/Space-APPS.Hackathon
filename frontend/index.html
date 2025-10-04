@@ -32,6 +32,9 @@
                     <option value="50">50</option>
                 </select>
             </div>
+            <div class="search-suggestions" id="popularQueries">
+                <span class="suggestion-label">Try:</span>
+            </div>
         </div>
 
         <div id="loadingIndicator" class="loading" style="display: none;">
@@ -40,7 +43,77 @@
         </div>
 
         <div id="resultsContainer"></div>
+
+        <section class="quick-stats" id="quickStats">
+            <div class="stat-card">
+                <h3>Total Semantic Chunks</h3>
+                <p class="stat-value" id="statChunks">—</p>
+                <p class="stat-hint">Indexed passages ready for similarity search</p>
+            </div>
+            <div class="stat-card">
+                <h3>Curated Publications</h3>
+                <p class="stat-value" id="statPublications">—</p>
+                <p class="stat-hint">High-impact studies ingested from PMC</p>
+            </div>
+            <div class="stat-card">
+                <h3>Embedding Model</h3>
+                <p class="stat-value">all-mpnet-base-v2</p>
+                <p class="stat-hint">768-dimension vectors powering the search</p>
+            </div>
+        </section>
+
+        <section class="insights" id="insights">
+            <h2>Make the Most of SpaceBio</h2>
+            <div class="insight-grid">
+                <article class="insight-card">
+                    <h3>Craft Smart Queries</h3>
+                    <p>Combine mission context with biology keywords. Try adding "countermeasures", "radiation" or "microgravity" to focus results.</p>
+                </article>
+                <article class="insight-card">
+                    <h3>Summaries on Demand</h3>
+                    <p>Use the AI summary button to scan findings before diving into the full publication.</p>
+                </article>
+                <article class="insight-card">
+                    <h3>Build Literature Sets</h3>
+                    <p>Save curated searches for your review workflow. The library below can get you started.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="library-section" id="library">
+            <div class="library-header">
+                <h2>Space Biology Library</h2>
+                <p>Jump into curated collections of publications and quick-start queries.</p>
+            </div>
+            <div class="library-filters" id="libraryFilters"></div>
+            <div class="library-grid" id="libraryGrid"></div>
+        </section>
+
+        <section class="workflow" id="workflow">
+            <h2>Research Workflow</h2>
+            <div class="workflow-steps">
+                <div class="workflow-step">
+                    <span class="step-number">1</span>
+                    <h3>Search &amp; Compare</h3>
+                    <p>Search across semantic chunks to shortlist relevant studies.</p>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-number">2</span>
+                    <h3>Summarize &amp; Highlight</h3>
+                    <p>Use AI summaries to capture key findings and hypotheses.</p>
+                </div>
+                <div class="workflow-step">
+                    <span class="step-number">3</span>
+                    <h3>Deep Dive</h3>
+                    <p>Open full publications, annotate your insights, and export for review.</p>
+                </div>
+            </div>
+        </section>
     </div>
+
+    <footer class="site-footer">
+        <p>Built for Space Apps Hackathon · Space biology knowledge at your fingertips.</p>
+    </footer>
 
     <script src="search.js"></script>
 </body>
