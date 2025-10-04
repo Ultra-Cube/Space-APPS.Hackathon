@@ -1,5 +1,7 @@
 # Frontend Interface Preview
 
+> **Built by the Ultra Cube Team for the NASA Space Apps Challenge 2025.**
+
 ## Main Interface
 
 The SpaceBio Semantic Search frontend features a modern, clean design:

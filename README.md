@@ -2,6 +2,8 @@
 
 A semantic search engine for space biology research publications using AI-powered embeddings and vector similarity search.
 
+> **Built by the Ultra Cube Team for the NASA Space Apps Challenge 2025.**
+
 ## 🆕 What's New
 
 **Latest Updates:**

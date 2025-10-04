@@ -2,6 +2,8 @@
 
 This document summarizes the changes made to implement the requested features.
 
+> **Built by the Ultra Cube Team for the NASA Space Apps Challenge 2025.**
+
 ## Requirements
 
 The original request was to:

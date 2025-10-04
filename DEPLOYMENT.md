@@ -1,5 +1,7 @@
 # Deployment Guide
 
+> **Built by the Ultra Cube Team for the NASA Space Apps Challenge 2025.**
+
 ## Local Development
 
 ### Quick Start
