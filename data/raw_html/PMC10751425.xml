@@ -1,0 +1,964 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd"> 
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" id="jcsm13335" xml:lang="en" article-type="research-article"><?DTDIdentifier.IdentifierValue -//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with OASIS Tables with MathML3 v1.1 20151215//EN?><?DTDIdentifier.IdentifierType public?><?SourceDTD.DTDName JATS-archive-oasis-article1-mathml3.dtd?><?SourceDTD.Version 1.1?><?ConverterInfo.XSLTName jats-oasis2jats3.xsl?><?ConverterInfo.Version 1?><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">J Cachexia Sarcopenia Muscle</journal-id><journal-id journal-id-type="iso-abbrev">J Cachexia Sarcopenia Muscle</journal-id><journal-id journal-id-type="doi">10.1007/13539.2190-6009</journal-id><journal-id journal-id-type="publisher-id">JCSM</journal-id><journal-title-group><journal-title>Journal of Cachexia, Sarcopenia and Muscle</journal-title></journal-title-group><issn pub-type="ppub">2190-5991</issn><issn pub-type="epub">2190-6009</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmcid">10751425</article-id><article-id pub-id-type="pmid">37722921</article-id>
+<article-id pub-id-type="doi">10.1002/jcsm.13335</article-id><article-id pub-id-type="publisher-id">JCSM13335</article-id><article-id pub-id-type="other">JCSM-D-23-00179</article-id><article-categories><subj-group subj-group-type="overline"><subject>Original Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Articles</subject></subj-group></article-categories><title-group><article-title>Bisphosphonates attenuate age&#x02010;related muscle decline in <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Caenorhabditis elegans</italic>
+</styled-content>
+</article-title><alt-title alt-title-type="right-running-head">Bisphosphonates in sarcopenia</alt-title><alt-title alt-title-type="left-running-head">L. Slade <italic toggle="yes">et al</italic>.</alt-title></title-group><contrib-group><contrib id="jcsm13335-cr-0001" contrib-type="author"><name><surname>Slade</surname><given-names>Luke</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-7660-7392</contrib-id><xref rid="jcsm13335-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="jcsm13335-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="jcsm13335-cr-0002" contrib-type="author"><name><surname>Bollen</surname><given-names>Shelby E.</given-names></name><xref rid="jcsm13335-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jcsm13335-cr-0003" contrib-type="author"><name><surname>Bass</surname><given-names>Joseph J.</given-names></name><xref rid="jcsm13335-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jcsm13335-cr-0004" contrib-type="author"><name><surname>Phillips</surname><given-names>Bethan E.</given-names></name><xref rid="jcsm13335-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jcsm13335-cr-0005" contrib-type="author"><name><surname>Smith</surname><given-names>Kenneth</given-names></name><xref rid="jcsm13335-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jcsm13335-cr-0006" contrib-type="author"><name><surname>Wilkinson</surname><given-names>Daniel J.</given-names></name><xref rid="jcsm13335-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jcsm13335-cr-0007" contrib-type="author"><name><surname>Szewczyk</surname><given-names>Nathaniel J.</given-names></name><xref rid="jcsm13335-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref></contrib><contrib id="jcsm13335-cr-0008" contrib-type="author"><name><surname>Atherton</surname><given-names>Philip J.</given-names></name><xref rid="jcsm13335-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jcsm13335-cr-0009" contrib-type="author" corresp="yes"><name><surname>Etheridge</surname><given-names>Timothy</given-names></name><xref rid="jcsm13335-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>t.etheridge@exeter.ac.uk</email></address></contrib></contrib-group><aff id="jcsm13335-aff-0001" content-type="private-address">
+<label>
+<sup>1</sup>
+</label>
+<institution>University of Exeter Medical School</institution>
+<city>Exeter</city>
+<country country="GB">UK</country>
+</aff><aff id="jcsm13335-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">Faculty of Health and Life Sciences</named-content>
+<institution>University of Exeter</institution>
+<city>Exeter</city>
+<country country="GB">UK</country>
+</aff><aff id="jcsm13335-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<named-content content-type="organisation-division">Centre of Metabolism, Ageing &#x00026; Physiology (COMAP), MRC&#x02010;Versus Arthritis Centre for Musculoskeletal Ageing Research (CMAR), Unit of Injury, Recovery and Inflammation Sciences (IRIS), School of Medicine</named-content>
+<institution>University of Nottingham</institution>
+<city>Derby</city>
+<country country="GB">UK</country>
+</aff><aff id="jcsm13335-aff-0004">
+<label>
+<sup>4</sup>
+</label>
+<named-content content-type="organisation-division">Ohio Musculoskeletal and Neurological Institute</named-content>
+<institution>Heritage College of Osteopathic Medicine</institution>
+<city>Athens</city>
+<named-content content-type="country-part">OH</named-content>
+<country country="US">USA</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>Correspondence to: Timothy Etheridge, Faculty of Health and Life Sciences, University of Exeter, Exeter, UK. Email: <email>t.etheridge@exeter.ac.uk</email>
+</corresp></author-notes><pub-date pub-type="epub"><day>18</day><month>9</month><year>2023</year></pub-date><pub-date pub-type="collection"><month>12</month><year>2023</year></pub-date><volume>14</volume><issue seq="150">6</issue><issue-id pub-id-type="doi">10.1002/jcsm.v14.6</issue-id><fpage>2613</fpage><lpage>2622</lpage><history>
+<date date-type="rev-recd"><day>17</day><month>7</month><year>2023</year></date>
+<date date-type="received"><day>17</day><month>3</month><year>2023</year></date>
+<date date-type="accepted"><day>21</day><month>8</month><year>2023</year></date>
+</history><permissions><!--&#x000a9; 2023 The Authors. Journal of Cachexia, Sarcopenia and Muscle published by John Wiley & Sons Ltd on behalf of the Society on Sarcopenia, Cachexia and Wasting Disorders--><copyright-statement content-type="article-copyright">&#x000a9; 2023 The Authors. Journal of Cachexia, Sarcopenia and Muscle published by Wiley Periodicals LLC.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:href="file:JCSM-14-2613.pdf"/><abstract><title>Abstract</title><sec id="jcsm13335-sec-0001"><title>Background</title><p>Age&#x02010;related muscle decline (sarcopenia) associates with numerous health risk factors and poor quality of life. Drugs that counter sarcopenia without harmful side effects are lacking, and repurposing existing pharmaceuticals could expedite realistic clinical options. Recent studies suggest bisphosphonates promote muscle health; however, the efficacy of bisphosphonates as an anti&#x02010;sarcopenic therapy is currently unclear.</p></sec><sec id="jcsm13335-sec-0002"><title>Methods</title><p>Using <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Caenorhabditis elegans</italic>
+</styled-content> as a sarcopenia model, we treated animals with 100&#x000a0;nM, 1, 10, 100 and 500&#x000a0;&#x003bc;M zoledronic acid (ZA) and assessed lifespan and healthspan (movement rates) using a microfluidic chip device. The effects of ZA on sarcopenia were examined using GFP&#x02010;tagged myofibres or mitochondria at days 0, 4 and 6 post&#x02010;adulthood. Mechanisms of ZA&#x02010;mediated healthspan extension were determined using combined ZA and targeted RNAi gene knockdown across the life&#x02010;course.</p></sec><sec id="jcsm13335-sec-0003"><title>Results</title><p>We found 100&#x000a0;nM and 1&#x000a0;&#x003bc;M ZA increased lifespan (<italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.001) and healthspan [954&#x000a0;&#x000b1;&#x000a0;53 (100&#x000a0;nM) and 963&#x000a0;&#x000b1;&#x000a0;48 (1&#x000a0;&#x003bc;M) vs. 834&#x000a0;&#x000b1;&#x000a0;59% (untreated) population activity AUC, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.05]. 10&#x000a0;&#x003bc;M ZA shortened lifespan (<italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001) but not healthspan (758.9&#x000a0;&#x000b1;&#x000a0;37 vs. 834&#x000a0;&#x000b1;&#x000a0;59, <italic toggle="yes">P</italic>&#x000a0;&#x0003e;&#x000a0;0.05), whereas 100 and 500&#x000a0;&#x003bc;M ZA were larval lethal. ZA (1&#x000a0;&#x003bc;M) significantly improved myofibrillar structure on days 4 and 6 post&#x02010;adulthood (83 and 71% well&#x02010;organized myofibres, respectively, vs. 56 and 34% controls, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001) and increased well&#x02010;networked mitochondria at day 6 (47 vs. 16% in controls, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01). Genes required for ZA&#x02010;mediated healthspan extension included <italic toggle="yes">fdps&#x02010;1</italic>/FDPS&#x02010;1 (278&#x000a0;&#x000b1;&#x000a0;9 vs. 894&#x000a0;&#x000b1;&#x000a0;17% population activity AUC in knockdown&#x000a0;+&#x000a0;1&#x000a0;&#x003bc;M ZA vs. untreated controls, respectively, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001), <italic toggle="yes">daf&#x02010;16</italic>/FOXO (680&#x000a0;&#x000b1;&#x000a0;16 vs. 894&#x000a0;&#x000b1;&#x000a0;17%, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01) and <italic toggle="yes">agxt&#x02010;2</italic>/BAIBA (531&#x000a0;&#x000b1;&#x000a0;23 vs. 552&#x000a0;&#x000b1;&#x000a0;8%, <italic toggle="yes">P</italic>&#x000a0;&#x0003e;&#x000a0;0.05). Life/healthspan was extended through knockdown of <italic toggle="yes">igdb&#x02010;1</italic>/FNDC5 (635&#x000a0;&#x000b1;&#x000a0;10 vs. 523&#x000a0;&#x000b1;&#x000a0;10% population activity AUC in gene knockdown vs. untreated controls, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01) and <italic toggle="yes">sir&#x02010;2.3</italic>/SIRT&#x02010;4 (586&#x000a0;&#x000b1;&#x000a0;10 vs. 523&#x000a0;&#x000b1;&#x000a0;10%, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.05), with no synergistic improvements in ZA co&#x02010;treatment vs. knockdown alone [651&#x000a0;&#x000b1;&#x000a0;12 vs. 635&#x000a0;&#x000b1;&#x000a0;10% (<italic toggle="yes">igdb&#x02010;1</italic>/FNDC5) and 583&#x000a0;&#x000b1;&#x000a0;9 vs. 586&#x000a0;&#x000b1;&#x000a0;10% (<italic toggle="yes">sir&#x02010;2.3</italic>/SIRT&#x02010;4), both <italic toggle="yes">P</italic>&#x000a0;&#x0003e;&#x000a0;0.05]. Conversely, <italic toggle="yes">let&#x02010;756</italic>/FGF21 and <italic toggle="yes">sir&#x02010;2.2</italic>/SIRT&#x02010;4 were dispensable for ZA&#x02010;induced healthspan [630&#x000a0;&#x000b1;&#x000a0;6 vs. 523&#x000a0;&#x000b1;&#x000a0;10% population activity AUC in knockdown&#x000a0;+&#x000a0;1&#x000a0;&#x003bc;M ZA vs. untreated controls, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01 (<italic toggle="yes">let&#x02010;756</italic>/FGF21) and 568&#x000a0;&#x000b1;&#x000a0;9 vs. 523&#x000a0;&#x000b1;&#x000a0;10%, <italic toggle="yes">P&#x000a0;&#x0003c;</italic>&#x000a0;0.05 (<italic toggle="yes">sir&#x02010;2.2</italic>/SIRT&#x02010;4)].</p></sec><sec id="jcsm13335-sec-0004"><title>Conclusions</title><p>Despite lacking an endoskeleton, ZA delays <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Caenorhabditis elegans</italic>
+</styled-content> sarcopenia, which translates to improved neuromuscular function across the life course. Bisphosphonates might, therefore, be an immediately exploitable anti&#x02010;sarcopenia therapy.</p></sec></abstract><kwd-group kwd-group-type="author-generated"><kwd id="jcsm13335-kwd-0001">Healthspan</kwd><kwd id="jcsm13335-kwd-0002">Lifespan</kwd><kwd id="jcsm13335-kwd-0003">Muscle</kwd><kwd id="jcsm13335-kwd-0004">Sarcopenia</kwd><kwd id="jcsm13335-kwd-0005">Zoledronic acid</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source><institution-wrap><institution>United Mitochondrial Disease Foundation
+</institution><institution-id institution-id-type="doi">10.13039/100009282</institution-id></institution-wrap></funding-source><award-id>PI&#x02010;19&#x02010;0985</award-id></award-group><award-group id="funding-0002"><funding-source>University of Exeter Diamond Jubilee Scholarship</funding-source></award-group><award-group id="funding-0003"><funding-source>US Army Research Office</funding-source><award-id>74014&#x02010;LS</award-id></award-group><award-group id="funding-0004"><funding-source><institution-wrap><institution>Medical Research Council, UK
+</institution><institution-id institution-id-type="doi">10.13039/501100000265</institution-id></institution-wrap></funding-source><award-id>MR/P021220/1</award-id></award-group><award-group id="funding-0005"><funding-source><institution-wrap><institution>NASA
+</institution><institution-id institution-id-type="doi">10.13039/100000104</institution-id></institution-wrap></funding-source><award-id>NSSC22K0278</award-id><award-id>NSSC22K0250</award-id></award-group></funding-group><counts><fig-count count="5"/><table-count count="0"/><page-count count="10"/><word-count count="5037"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>December 2023</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.3.6 mode:remove_FC converted:27.12.2023</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="jcsm13335-cit-0001">
+<string-name>
+<surname>Slade</surname>
+<given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Bollen</surname>
+<given-names>S. E.</given-names>
+</string-name>, <string-name>
+<surname>Bass</surname>
+<given-names>J. J.</given-names>
+</string-name>, <string-name>
+<surname>Phillips</surname>
+<given-names>B. E.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>
+<given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Wilkinson</surname>
+<given-names>D. J.</given-names>
+</string-name>, et al (<year>2023</year>) <article-title>Bisphosphonates attenuate age&#x02010;related muscle decline in <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Caenorhabditis elegans</italic>
+</styled-content>
+</article-title>, <source>Journal of Cachexia, Sarcopenia and Muscle</source>, <volume>14</volume>, <fpage>2613</fpage>&#x02013;<lpage>2622</lpage>, doi: <pub-id pub-id-type="doi">10.1002/jcsm.13335</pub-id>
+</mixed-citation>
+</p></notes></front><body id="jcsm13335-body-0001"><sec id="jcsm13335-sec-0005"><title>Introduction</title><p>Age&#x02010;related muscle decline, termed &#x02018;sarcopenia&#x02019;, is classified as a specific disease associated with numerous health risk factors in the elderly, prevalent in at least 10% of older populations<xref rid="jcsm13335-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref> and up to 31% as a co&#x02010;morbidity.<xref rid="jcsm13335-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref> Despite associated annual healthcare costs that run into the billions<xref rid="jcsm13335-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref> and significant impacts on individual quality of life and all&#x02010;cause mortality,<xref rid="jcsm13335-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref> efficacious treatment strategies against sarcopenia remain limited.</p><p>Physical activity plus targeted nutrition represents the most effective chronic modifiable lifestyle strategy against sarcopenia.<xref rid="jcsm13335-bib-0005" ref-type="bibr">
+<sup>5</sup>
+</xref> However, ageing muscle growth responses to these interventions are sub&#x02010;optimal,<xref rid="jcsm13335-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref> and certain older individuals can be unable (i.e., through injury and/or access to exercise facilities) or unwilling to participate in regular vigorous activity. Indeed, ~50&#x02013;70% of those aged 75+ years are physically inactive,<xref rid="jcsm13335-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref> meaning complementary pharmaceutical therapies are relevant to a significant portion of the ageing population. Established drugs that modify human muscle ageing are limited, and importantly, many of these drugs display variable therapeutic efficacy and associate with harmful side&#x02010;effect profiles that render them inappropriate for long&#x02010;term clinical use. For example, rapamycin holds variable efficacy against sarcopenia indices across health and disease<xref rid="jcsm13335-bib-0008" ref-type="bibr">
+<sup>8</sup>
+</xref> but is a potent immunosuppressant<xref rid="jcsm13335-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref> unsuitable for chronic use in otherwise healthy humans. Drug identification efforts might instead focus on repurposing existing clinically approved compounds for sarcopenic indications as a realistic, immediately employable approach to therapeutic discovery.</p><p>Bisphosphonates are chemically stable derivatives of endogenous inorganic pyrophosphate, a metabolite of multiple biosynthetic reactions and present in most tissues, including muscle.<xref rid="jcsm13335-bib-0010" ref-type="bibr">
+<sup>10</sup>
+</xref> Recapitulating the effects of inorganic pyrophosphate, bisphosphonates inhibit calcification and lower hydroxyapatite degradation,<xref rid="jcsm13335-bib-0011" ref-type="bibr">
+<sup>11</sup>
+</xref> while also promoting osteoclast apoptosis to effectively protect against bone loss. As such, bisphosphonates have become a standard clinical strategy against osteoporosis and a variety of skeletal conditions.<xref rid="jcsm13335-bib-0012" ref-type="bibr">
+<sup>12</sup>
+</xref> Yet skeletal muscle health and bone function are inextricably linked: Effective mechanical coupling and endocrine muscle&#x02010;bone communication is essential to muscle and bone health,<xref rid="jcsm13335-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref> with sarcopenia and osteoporosis often presenting together.<xref rid="jcsm13335-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref> Osteoporosis patients prescribed alendronate or pamidronate (the most popular first&#x02010;line bisphosphonates) for between 6&#x000a0;months and 3&#x000a0;years display significant increases in muscle strength<xref rid="jcsm13335-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref> and total muscle mass.<xref rid="jcsm13335-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref> Recent reports on the most potent bisphosphonate, zoledronic acid (ZA), show improved muscle morphology, strength and mass in rodent models of cancer cachexia,<xref rid="jcsm13335-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref> Duchenne muscular dystrophy<xref rid="jcsm13335-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref> and denervation&#x02010;induced muscle atrophy.<xref rid="jcsm13335-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> Retrospective analysis of osteoporosis patients prescribed ZA for 3&#x000a0;years also exhibit significant increases in total lean muscle mass, compared with a loss of muscle mass in untreated controls.<xref rid="jcsm13335-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref> In the ageing context, ZA&#x02010;treated fruit flies displayed increased survival and improved climbing ability across the life course, suggesting improved neuromuscular ageing.<xref rid="jcsm13335-bib-0021" ref-type="bibr">
+<sup>21</sup>
+</xref> However, the direct anti&#x02010;sarcopenic efficacy of ZA has not been established.</p><p>The nematode <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Caenorhabditis elegans</italic>
+</styled-content> is an established model of ageing, displaying ordered, progressive age&#x02010;related deterioration of multiple tissues, including muscle.<xref rid="jcsm13335-bib-0022" ref-type="bibr">
+<sup>22</sup>
+</xref>
+<styled-content style="fixed-case" toggle="no">
+<italic toggle="no">C.&#x000a0;elegans</italic>
+</styled-content> muscle is also highly morphologically and metabolically similar to human muscle and has high genetic orthology (60&#x02013;85%) of sub&#x02010;muscular systems with people.<xref rid="jcsm13335-bib-0023" ref-type="bibr">
+<sup>23</sup>
+</xref> As with fruit flies, <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">C.&#x000a0;elegans</italic>
+</styled-content> are invertebrates that do not possess clear orthologues of mammalian bone secretory factors (&#x02018;osteokines&#x02019;).<xref rid="jcsm13335-bib-0024" ref-type="bibr">
+<sup>24</sup>
+</xref>
+<styled-content style="fixed-case" toggle="no">
+<italic toggle="no">C.&#x000a0;elegans</italic>
+</styled-content> are, therefore, an excellent system for understanding muscle&#x02010;specific mechanisms of bisphosphonates, independently of bone&#x02010;derived confounders. We thus employed <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">C.&#x000a0;elegans</italic>
+</styled-content> as a genomic model of ageing muscle decline to establish the bone&#x02010;independent effects, and mechanisms of, bisphosphonates on sarcopenia progression as part of an ageing drug translational pipeline with realistic, near&#x02010;term applicability in the clinic.</p></sec><sec sec-type="methods" id="jcsm13335-sec-0006"><title>Methods</title><sec id="jcsm13335-sec-0007"><title>Assessing zoledronic acid effects on <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Caenorhabditis elegans</italic>
+</styled-content> lifespan and healthspan</title><p>Wild&#x02010;type (N2 stain) animals were age synchronized by gravity flotation and ~80&#x000a0;L1 larvae were placed on 33&#x000a0;mm petri dishes (20 L1 per 33&#x000a0;mm plate) containing 2&#x000a0;mL NGM agar [50&#x000a0;mM NaCl, 0.25% (w/v) bacteriological peptone, 1.7% (w/v) agar, 1&#x000a0;mM CaCl<sub>2</sub>, 1&#x000a0;mM MgSO<sub>4</sub>, 25&#x000a0;mM KH<sub>2</sub>PO<sub>4</sub> (pH&#x000a0;6), 12.9&#x000a0;&#x003bc;M cholesterol] and seeded with 200&#x000a0;&#x003bc;L of OP50 <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Escherichia coli</italic>
+</styled-content> bacteria. For ZA treatments, 100&#x000a0;&#x003bc;L of dilute compound (i.e. &#x02013; 100&#x000a0;&#x003bc;L of 2.3&#x000a0;&#x003bc;M, 23&#x000a0;&#x003bc;M, 230&#x000a0;&#x003bc;M, 2.3&#x000a0;mM and 11.5&#x000a0;&#x003bc;M intermediate dilutions in ddH<sub>2</sub>O for 100&#x000a0;nM, 1&#x000a0;&#x003bc;M, 10&#x000a0;&#x003bc;M, 100&#x000a0;&#x003bc;M and 500&#x000a0;&#x003bc;M concentrations, respectively) were diluted into a 2.3&#x000a0;mL plate volume to achieve the desired final concentration. Control animals were grown on plates seeded with 100&#x000a0;&#x003bc;L of ddH<sub>2</sub>O to account for any diluting of bacterial lawns. Animals were grown on petri dishes for ~48&#x000a0;h at 20&#x000b0;C to reach young adulthood, then washed off using 3&#x000a0;mL M9 buffer (3&#x000a0;g KH<sub>2</sub>PO<sub>4</sub>, 6&#x000a0;g Na<sub>2</sub>HPO<sub>4</sub>, 5&#x000a0;g NaCl, 1&#x000a0;mL 1&#x000a0;M MgSO<sub>4</sub> per litre) and pooled into 60&#x000a0;cm petri dishes. From these pooled samples, ~70 young adults were collected and loaded into microfluidic chips (Infinity chips; Nemalife Inc., TX) using a 2.5&#x000a0;mL syringe, where the animals remained throughout the rest of the life course. Using the Infinity screening system (Nemalife Inc., TX), on every day of the life course, chips were washed for 90&#x000a0;s with liquid NGM to remove progeny followed by a further 90&#x000a0;s recording for subsequent computational analysis of animal survival and locomotion. Chips were then injected with ~200&#x000a0;&#x003bc;L of 20&#x000a0;mg/mL OP50 supplemented with ZA or ddH<sub>2</sub>O. Specifically, 980&#x000a0;&#x003bc;L of 20&#x000a0;mg/mL OP50 was supplemented with 20&#x000a0;&#x003bc;L of the required ZA intermediate dilution (i.e., 5&#x000a0;&#x003bc;M, 50&#x000a0;&#x003bc;M and 500&#x000a0;&#x003bc;M intermediates for 100&#x000a0;nM, 1&#x000a0;&#x003bc;M and 10&#x000a0;&#x003bc;M of ZA, respectively) or 20&#x000a0;&#x003bc;L of ddH<sub>2</sub>O for controls. Chips were then stored in petri dishes at 20&#x000b0;C for the next 24&#x000a0;h with a damp, sterile tissue and parafilmed to avoid the microfluidic arena drying out.</p><p>Lifespan was performed using the Infinity system screening platform (Nemalife Inc., TX). Specifically, 90&#x000a0;s videos were split into three still image frames (frames 1, 300 and 900), and the Infinity screening system automates a bounding box around every (~70&#x02013;80) whole animal in the microfluidic chip. Using the Infinity system software (Nemalife Inc., TX), computational coefficients determine animal displacements from outside this bounding box and were used for both lifespan and healthspan analysis. Animals were deemed dead if coefficients were &#x0003c;0.01 (no movement) and alive if values were &#x0003e;0.01. For healthspan analysis, movement rate was employed as one of the most robust measures of animal healthspan.<xref rid="jcsm13335-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref> For quantification, animals that obtained coefficients of 0.01&#x02013;0.40 (i.e., unable to move more than half its body length between subsequent frames) were deemed inactive. Animals with scores of 0.41&#x02013;1 were classed as &#x02018;active&#x02019; animals (i.e., moving half of, or more than its full body&#x02010;length in displacement between subsequent frames).</p><p>Both lifespan and healthspan were determined every day using videos of microfluidic&#x02010;housed populations. Average values were taken from movement scores between all three frames. In addition to software automation, each video was manually corrected for any false positives/box deformations that could skew movement scores. Daily mean movement values were converted to area under the curve to denote total population movement scores across the entire life course.</p></sec><sec id="jcsm13335-sec-0008"><title>Zoledronic acid effects on sarcopenia dystrophic progression with age</title><p>The anti&#x02010;sarcopenic effects of ZA (1&#x000a0;&#x003bc;M) was visualized and quantified using transgenic strains expressing green fluorescent protein (GFP)&#x02010;tagged sarcomeres (PJ727 strain: <italic toggle="yes">jls01</italic> (myo&#x02010;3:: GFP, <italic toggle="yes">rol&#x02010;6</italic> (<italic toggle="yes">su1006</italic>)); <italic toggle="yes">unc&#x02010;54</italic>::lacZ V) or GFP&#x02010;tagged mitochondria (CB5600 strain: <italic toggle="yes">ccIs4251</italic> (Pmyo&#x02010;3:: Ngfp&#x02010;lacZ; Pmyo&#x02010;3:: Mtgfp) I; <italic toggle="yes">him&#x02010;8</italic> (e1489) IV). Strains were grown on 33&#x000a0;mm plates containing 2&#x000a0;mL NGM agar seeded with 200&#x000a0;&#x003bc;L of OP50&#x000a0;&#x000b1;&#x000a0;ZA, as detailed above. Animals were transferred onto fresh plates every 2&#x000a0;days after young adult stage to remove progeny and prevent population starvation. To image sarcomere and mitochondrial structure, ~30 animals per condition/time point were picked into 20&#x000a0;&#x003bc;L of M9 buffer on a microscope slide (VWR Superfrost, UK) with a cover slip placed on top and imaged immediately using an upright epiflourescent microscope (BX43, Olympus Life Science, UK). Images of the body wall muscles were captured from the head and tail region of each animal (avoiding the mid&#x02010;animal/vulva region that exhibits frequent egg&#x02010;laying induced tissue disruption) using an Orca&#x02010;spark camera (Hamamatsu, Japan) set to 50&#x000a0;ms exposure rate and a gain of 3.4&#x000a0;dB for all acquired images. Approximately 10 individual muscle cells were scored per animal equating to ~300 muscle cells per condition/replicate and scored as either well networked, moderately fragmented or severely fragmented muscle sarcomere or mitochondria structures as previously described<xref rid="jcsm13335-bib-0026" ref-type="bibr">
+<sup>26</sup>
+</xref> (see <italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-supitem-0001" ref-type="supplementary-material">S1</xref> for representative images of each class of structural defect). Analysis was carried out in ImageJ, and the number of well networked, moderately fragmented or severely fragmented muscles were expressed as a percentage of total muscle cells visible and analysed within each animal.</p></sec><sec id="jcsm13335-sec-0009"><title>RNA interference and combined zoledronic acid treatments for lifespan and healthspan analysis</title><p>The effects of RNAi treatments on animal lifespan/healthspan were determined using bacterial feeding vectors and performed in the Infinity screening system, as described above. All bacterial lawns expressing double&#x02010;stranded RNA were grown from the MRC Ahringer Library of bacterial clones to target (<italic toggle="yes">fdps&#x02010;1: R06C1.2; daf&#x02010;16: R13H8.1; agxt&#x02010;2: T09B4.8; igdb&#x02010;1: T04A11.3; let&#x02010;756: C05D11.4; sir&#x02010;2.2: F46G10.7: sir&#x02010;2.3: F46G10.3</italic>). Each clone was streaked onto LB plates supplemented with 50&#x000a0;&#x003bc;g/mL ampicillin and 25&#x000a0;&#x003bc;g/mL carbenicillin and grown overnight at 37&#x000b0;C. Single colonies were then picked into sterile LB broth supplemented with 50&#x000a0;&#x003bc;g/mL ampicillin and grown for 16&#x000a0;h with shaking at 180&#x000a0;rpm at 37&#x000b0;C. After 16&#x000a0;h incubation, 0.4&#x000a0;mM isopropyl &#x003b2;&#x02010;<sc>d</sc>&#x02010;1&#x02010;thiogalactopyranoside was added for RNAi induction, with further shaking at 180&#x000a0;rpm for 2&#x000a0;h at 37&#x000b0;C as described previously.<xref rid="jcsm13335-bib-0027" ref-type="bibr">
+<sup>27</sup>
+</xref> After 18&#x000a0;h incubation, tubes were spun at 3000&#x000a0;<italic toggle="yes">g</italic> for 10&#x000a0;min to obtain bacterial pellets. Liquid NGM was added to each bacterial pellet to reach a final bacteria concentration of 20&#x000a0;mg/mL, adding isopropyl &#x003b2;&#x02010;<sc>d</sc>&#x02010;1&#x02010;thiogalactopyranoside to a final 1&#x000a0;mM concentration before use. For combined ZA treatments, the same bacterial preparation was performed, but with 20&#x000a0;&#x003bc;L of dilute ZA supplemented to 1&#x000a0;mL of 20&#x000a0;mg/mL OP50 in NGM for a final concentration of 1&#x000a0;&#x003bc;M. On every day of the life course, after washing/recording using the Infinity system as detailed above, ~200&#x000a0;&#x003bc;L of RNAi bacteria&#x000a0;&#x000b1;&#x000a0;ZA (1&#x000a0;&#x003bc;M) was injected into the microfluidic chips before storing in petri dishes at 20&#x000b0;C for 24&#x000a0;h until washing/refeeding the next day (with drug dilution/control). All bacteria and drug solutions were prepared fresh daily until cessation of life. RNAi experiments were always conducted alongside empty vector controls (PL4440).</p></sec><sec id="jcsm13335-sec-0010"><title>Statistics</title><p>Lifespan analysis was performed using Kaplan&#x02013;Meier curves assessed by the log&#x02010;rank (Mantell&#x02013;Cox) test. Multiple comparisons of survival curves were performed manually using the Bonferroni&#x02010;corrected threshold. For movement rate, area under the curve (AUC) was performed on mean movement values across each day of adulthood (averages taken from across all three frames). AUC values and standard deviations obtained from replicate screens were then assessed by one&#x02010;way ANOVA in GraphPad, Prism. Both mitochondrial and sarcomere quantification were analysed by two&#x02010;way ANOVA using the percentage classification score from individual animals across biological repeats. All statistics were performed in GraphPad, Prism (San Diego, California USA).</p></sec></sec><sec sec-type="results" id="jcsm13335-sec-0011"><title>Results</title><sec id="jcsm13335-sec-0012"><title>Zoledronic acid extends <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Caenorhabditis elegans</italic>
+</styled-content> lifespan and healthspan</title><p>Higher ZA concentrations (500 and 100&#x000a0;&#x003bc;M) were larval lethal, and 10&#x000a0;&#x003bc;M ZA shortened lifespan (median survival&#x000a0;=&#x000a0;11 vs. 14&#x000a0;days for controls, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001; <italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0001" ref-type="fig">1A</xref>) without significantly impairing healthspan (animal movement AUC&#x000a0;=&#x000a0;758.9&#x000a0;&#x000b1;&#x000a0;37.08 vs. 833.9&#x000a0;&#x000b1;&#x000a0;59.91 for controls, <italic toggle="yes">P</italic>&#x000a0;&#x0003e;&#x000a0;0.05; <italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0001" ref-type="fig">1A</xref>). Conversely, lifespan extension was observed with lower ZA doses of 1&#x000a0;&#x003bc;M (median survival&#x000a0;=&#x000a0;16&#x000a0;days, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.001; <italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0001" ref-type="fig">1B</xref>) and 100&#x000a0;nM (median survival&#x000a0;=&#x000a0;16&#x000a0;days, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001; <italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0001" ref-type="fig">1C</xref>). These lifespan&#x02010;promoting ZA doses also associated with healthspan extension at 1&#x000a0;&#x003bc;M (AUC&#x000a0;=&#x000a0;963.1&#x000a0;&#x000b1;&#x000a0;48.74, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.05; <italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0001" ref-type="fig">1B</xref>) and 100&#x000a0;nM (AUC&#x000a0;=&#x000a0;953.8&#x000a0;&#x000b1;&#x000a0;53.77, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.05; <italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0001" ref-type="fig">1C</xref>) treatments. Additionally, significant movement decline onset became apparent in day 9 control animals (<italic toggle="yes">P</italic>&#x000a0;&#x0003e;&#x000a0;0.01 vs. day 1 adults), which was upheld across all ZA treatment doses at this single time point (+22.2, +31.8 and +17.6% population activity on day 9 vs. untreated controls in 10&#x000a0;&#x003bc;M, 1&#x000a0;&#x003bc;M and 100&#x000a0;nM, respectively). ZA thus acts dose&#x02010;dependently to augment animal longevity and health across the life course.</p><fig position="float" fig-type="Figure" id="jcsm13335-fig-0001"><label>Figure 1</label><caption><p>Zoledronic acid acts dose&#x02010;dependently to improve <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">C.&#x000a0;elegans</italic>
+</styled-content> survival and movement capacity. (A) Animals exposed to 10&#x000a0;&#x003bc;M zoledronic acid (ZA) exhibit significant declines in survivability (top) to untreated controls (median survival: 10 vs. 14&#x000a0;days, respectively, <italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001), however, show no significant impairment in movement capacity (bottom) across whole life (<italic toggle="no">P</italic>&#x000a0;=&#x000a0;0.208). Conversely, both 1&#x000a0;&#x003bc;M (B) and 100&#x000a0;nM (C) were beneficial to animal survival (1&#x000a0;&#x003bc;M median survival: 16&#x000a0;days, <italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.001; 100&#x000a0;nM: 16&#x000a0;days, <italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001), with paralleled improvements in movement capacity throughout the life course. (D) Graphical overlay of lifespan curves from each ZA concentration versus untreated controls. (E) Overlay of life course movement rates between ZA doses displayed as % mean AUC. Data are mean&#x000a0;+&#x000a0;SEM of three biological repeats, with ~225&#x02013;300 animals per condition/time point. Asterisks denote significance to N2 controls. *<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.05, **<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01, ***<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.001, ****<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001.</p></caption><graphic xlink:href="JCSM-14-2613-g002" position="anchor" id="jats-graphic-1"/></fig></sec><sec id="jcsm13335-sec-0013"><title>Zoledronic acid delays age&#x02010;related declines in muscle sarcomere and mitochondrial integrity</title><p>To understand the effects of ZA on progressive sarcomere dystrophy across age, transgenic <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">C.&#x000a0;elegans</italic>
+</styled-content> expressing GFP&#x02010;tagged myosin were treated with 1&#x000a0;&#x003bc;M ZA. Corroborating previous reports on the temporal age&#x02010;related loss of sub&#x02010;cellular muscle structures,<xref rid="jcsm13335-bib-0022" ref-type="bibr">
+<sup>22</sup>
+</xref> untreated wild&#x02010;type animals displayed a significant &#x02212;35.6% decline in organized myofibrillar structure by day 4 post&#x02010;adulthood (<italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001; <italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0002" ref-type="fig">2A,B</xref>), which worsened to &#x02212;58.0% by day 6 post&#x02010;adulthood (<italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001). ZA delayed loss of organized sarcomeres until day 6 post&#x02010;adulthood (&#x02212;15.6%, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01), and significantly increased the number of muscle cells displaying organized sarcomeres versus untreated controls at days 4 (83.9% vs. 54.4%) and 6 (71.1% vs. 31.4%) post&#x02010;adulthood (both <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001, <italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0002" ref-type="fig">2A,B</xref>). ZA also decreased muscle cells categorized as &#x02018;moderately disorganized&#x02019; on days 4 (17.0% vs. 38.2%, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01) and 6 (27.6 vs. 53.4%, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001) post&#x02010;adulthood and reduced the number of &#x02018;severely disorganized&#x02019; muscles on day 6 post&#x02010;adulthood (1.8% vs. 13.1%, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001).</p><fig position="float" fig-type="Figure" id="jcsm13335-fig-0002"><label>Figure 2</label><caption><p>Zoledronic acid attenuates age&#x02010;related loss of sarcomere integrity. (A) Onset of myofibrillar disorganization occurred at days 4 and 6 post&#x02010;adulthood in untreated animals and was significantly attenuated in zoledronic treated (1&#x000a0;&#x003bc;M) animals (all <italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001). (B) Representative images of untreated (top) and zoledronic acid treated (bottom) myofibres. Data are means of two biological repeats, with ~50&#x02013;60 animals per condition/time point, and images taken from head and tail regions of each animal (~120&#x02013;150 muscle cells per condition/time point). Asterisks denote significance between zoledronic acid and untreated animals within each structural category (<sup>**</sup>
+<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01, <sup>****</sup>
+<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001). &#x02018;&#x000a5;&#x02019; denotes significant loss of myofibrillar structure for within&#x02010;condition comparisons versus day 0 values (<sup>&#x000a5;&#x000a5;&#x000a5;</sup>
+<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.001, <sup>&#x000a5;&#x000a5;&#x000a5;&#x000a5;</sup>
+<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001).</p></caption><graphic xlink:href="JCSM-14-2613-g005" position="anchor" id="jats-graphic-3"/></fig><p>We next examined the effects of ZA on mitochondrial integrity, given the strong associations of mitochondrial structure and function with ageing animal health. In line with previous wild&#x02010;type ageing studies,<xref rid="jcsm13335-bib-0022" ref-type="bibr">
+<sup>22</sup>
+</xref> loss of networked mitochondria occurred by day 2 post&#x02010;adulthood (<italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-supitem-0002" ref-type="supplementary-material">S2</xref>), which progressively worsened at day 4 (&#x02212;42.6%, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001) and day 6 post&#x02010;adulthood (&#x02212;67.0%, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001; <italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0003" ref-type="fig">3A,B</xref>). ZA treatment did not delay the onset of well&#x02010;networked mitochondria loss at day 2 (<italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-supitem-0002" ref-type="supplementary-material">S2</xref>) or day 4 post&#x02010;adulthood (51.8%, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001). However, ZA prevented progressive mitochondrial fragmentation at day 6 post&#x02010;adulthood (46.7%, <italic toggle="yes">P</italic>&#x000a0;&#x0003e;&#x000a0;0.05 vs. day 4), which was also significantly higher than in untreated animals (46.7 vs. 16.1%, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01).</p><fig position="float" fig-type="Figure" id="jcsm13335-fig-0003"><label>Figure 3</label><caption><p>Zoledronic acid attenuates age&#x02010;related loss of muscle mitochondrial structure. (A) Untreated animals displayed progressive declines in well&#x02010;networked mitochondria across days 0, 4 and 6 post&#x02010;adulthood (for each time point, <italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001). Zoledronic acid treatment (1&#x000a0;&#x003bc;M) animals saw a similar decline by day 4; however, no further decline was evident by day 6 post&#x02010;adulthood, showing significant improvement when compared to untreated animals at this time point (<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01). (B) Representative images of untreated (top) and zoledronic acid treated (bottom) data are means of two biological repeats with ~50&#x02013;60 animals per condition/time point, and images taken from head and tail regions of each animal (~120&#x02013;150 muscle cells per condition/time point). Asterisks denote significance between zoledronic acid and untreated animals within each structural category (<sup>**</sup>
+<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01). &#x02018;&#x000a5;&#x02019; denotes significant loss of myofibrillar structure for within&#x02010;condition comparisons versus day 0 values (<sup>&#x000a5;&#x000a5;&#x000a5;&#x000a5;</sup>
+<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001).</p></caption><graphic xlink:href="JCSM-14-2613-g001" position="anchor" id="jats-graphic-5"/></fig></sec><sec id="jcsm13335-sec-0014"><title>Zoledronic acid&#x02010;mediated healthspan extension acts through multiple mechanisms</title><p>The lifespan extending effects of ZA have previously been attributed to the mevalonate cholesterol/isoprenoid lipid biosynthesis pathway and the FOXO family of transcription factors,<xref rid="jcsm13335-bib-0021" ref-type="bibr">
+<sup>21</sup>
+</xref> but their role in ZA&#x02010;induced healthspan extension is unknown. RNAi knockdown (KD) of <italic toggle="yes">fdps&#x02010;1</italic>, an orthologue of farnesyl diphosphate synthetase involved in the biosynthesis of farnesyl diphosphate intermediates from mevalonate, impaired survival (median survival&#x000a0;=&#x000a0;6 vs. 14&#x000a0;days for controls, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001) and healthspan (AUC&#x000a0;=&#x000a0;287&#x000a0;&#x000b1;&#x000a0;9 vs. 894&#x000a0;&#x000b1;&#x000a0;17% population activity for controls, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001), which was not improved by co&#x02010;treatment with 1&#x000a0;&#x003bc;M ZA (<italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0004" ref-type="fig">4A</xref>). Similarly, RNAi KD of the <italic toggle="yes">daf&#x02010;16</italic>/FOXO stress response pathway impaired survivability (median survival&#x000a0;=&#x000a0;12 vs. 14&#x000a0;days for controls, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001) and healthspan (AUC&#x000a0;=&#x000a0;680.5&#x000a0;&#x000b1;&#x000a0;23.6 vs. 894.2&#x000a0;&#x000b1;&#x000a0;17.4 for empty vector, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01) and prevented the beneficial effects of ZA treatment (<italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0004" ref-type="fig">4B</xref>).</p><fig position="float" fig-type="Figure" id="jcsm13335-fig-0004"><label>Figure 4</label><caption><p>FDPS, FOXO and BAIBA orthologues are required for the healthspan effects of zoledronic acid. Knockdown of <italic toggle="no">FDPS&#x02010;1</italic> (FDPS) with ZA co&#x02010;treatment (1&#x000a0;&#x003bc;M) prevents ZA mediated lifespan (top) and healthspan (bottom) extension (A). Similarly, knockdown of <italic toggle="no">daf&#x02010;16</italic> (FOXO) decreases survival and movement, with no improvement with ZA co&#x02010;treatment (B). The conserved bone&#x02010;muscle ortholog <italic toggle="no">agxt&#x02010;2</italic> (BAIBA) is required for ZA mediated improvement in survival and movement (C). Data are mean&#x000a0;+&#x000a0;SD of two repeats, with ~140&#x02013;160 animals per condition/time point. Asterisks denote significance to empty vector. <sup>**</sup>
+<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01, <sup>****</sup>
+<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001.</p></caption><graphic xlink:href="JCSM-14-2613-g004" position="anchor" id="jats-graphic-7"/></fig><p>The FOXO pathway is a global stress response system, inducible by a wide array of stimuli and a generic transcription factor regulating cellular responses across multiple drug families<xref rid="jcsm13335-bib-0028" ref-type="bibr">
+<sup>28</sup>
+</xref> that integrates multiple upstream signals to influence worm ageing.<xref rid="jcsm13335-bib-0029" ref-type="bibr">
+<sup>29</sup>
+</xref> Alternative, muscle&#x02010;centric mechanisms thus also likely contribute to the healthspan benefits of ZA. To probe potential muscle&#x02010;derived mechanisms of ZA&#x02010;induced healthspan extension, we examined the role of three putative myokines that exhibit altered expression across age and implicated in muscle&#x02010;bone crosstalk: <italic toggle="yes">agxt&#x02010;2</italic>/BAIBA, <italic toggle="yes">igdb&#x02010;1</italic>/FNDC5 and <italic toggle="yes">let&#x02010;756</italic>/FGF21.<xref rid="jcsm13335-bib-0024" ref-type="bibr">
+<sup>24</sup>
+</xref> Lifespan and healthspan were unaffected by KD of <italic toggle="yes">agxt&#x02010;2</italic>/BAIBA (&#x003b2;&#x02010;aminoisobutyric acid), a muscle&#x02010;borne bone protective factor<xref rid="jcsm13335-bib-0030" ref-type="bibr">
+<sup>30</sup>
+</xref>; however, combined <italic toggle="yes">agxt&#x02010;2</italic> KD with ZA treatment was unable to confer life/healthspan extension (<italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0004" ref-type="fig">4C</xref>). Conversely, the inhibition of <italic toggle="yes">igdb&#x02010;1</italic> extended lifespan (median survival&#x000a0;=&#x000a0;11 vs. 7&#x000a0;days for controls, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.05) and improved healthspan (AUC&#x000a0;=&#x000a0;634.5&#x000a0;&#x000b1;&#x000a0;10.5 vs. 523&#x000a0;&#x000b1;&#x000a0;10.0 for controls, <italic toggle="yes">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01), with similar life/healthspan extension observed upon co&#x02010;treatment with ZA (<italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0005" ref-type="fig">5A</xref>). Additionally, <italic toggle="yes">let&#x02010;756</italic> appears dispensable for ZA&#x02010;induced healthspan effects: KD alone caused no significant alterations in survival or movement, whereas increased lifespan and healthspan was retained with combined <italic toggle="yes">let&#x02010;756</italic> KD and ZA treatment (<italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0005" ref-type="fig">5B</xref>).</p><fig position="float" fig-type="Figure" id="jcsm13335-fig-0005"><label>Figure 5</label><caption><p>Genes either dispensable, or that associate with ZA's healthspan effects. Knockdown of <italic toggle="no">igdb&#x02010;1</italic> (FNDC5) significantly increased survival and healthspan, where ZA co&#x02010;treatment (1&#x000a0;&#x003bc;M) was not synergistic, but displayed similar improvements in lifespan (top) and healthspan (bottom) suggesting <italic toggle="no">igdb&#x02010;1</italic> might exhibit ZA&#x02010;induced downregulation (A), or act independently to increase healthspan. Conversely, <italic toggle="no">let&#x02010;756</italic> (FGF21, B) is dispensable for both lifespan and healthspan extension with ZA. The mitochondrial sirtuins displayed opposing effects; <italic toggle="no">sir&#x02010;2.2</italic> (SIRT&#x02010;4, C) is dispensable for ZA's healthspan effects, whereas <italic toggle="no">sir&#x02010;2.3</italic> (SIRT&#x02010;4) knockdown increased survival and movement (D), as did ZA co&#x02010;treatment, suggesting <italic toggle="no">sir&#x02010;2.3</italic> downregulation might mediate ZA's healthspan effects. Asterisks denote significance to empty vector controls. *<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.05, <sup>**</sup>
+<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01, <sup>****</sup>
+<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001. &#x02018;#&#x02019; denote significance between ZA co&#x02010;treatments and gene inhibition alone. <sup>#</sup>
+<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.05, <sup>##</sup>
+<italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.01.</p></caption><graphic xlink:href="JCSM-14-2613-g003" position="anchor" id="jats-graphic-9"/></fig><p>Recent rodent work shows bisphosphonates attenuate denervation&#x02010;induced muscle atrophy via downregulation of sirtuin&#x02010;3 (SIRT3), one of the nicotinamide adenine dinucleotide (NAD+)&#x02010;dependent deacetylase family members.<xref rid="jcsm13335-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> Because SIRT3 is primarily mitochondrially localized,<xref rid="jcsm13335-bib-0031" ref-type="bibr">
+<sup>31</sup>
+</xref> we examined the role of two <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">C.&#x000a0;elegans</italic>
+</styled-content> mitochondrial sirtuins, <italic toggle="yes">sir&#x02010;2.2</italic> and <italic toggle="yes">sir&#x02010;2.3</italic>,<xref rid="jcsm13335-bib-0032" ref-type="bibr">
+<sup>32</sup>
+</xref> for their role in ZA&#x02010;mediated lifespan and healthspan extension. Reinforcing a mitochondrial role of <italic toggle="yes">sir&#x02010;2.2</italic> and <italic toggle="yes">sir&#x02010;2.3</italic>, RNAi KD of each gene caused increased mitochondrial fragmentation at day 0 post&#x02010;adulthood (<italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-supitem-0003" ref-type="supplementary-material">S3</xref>). While <italic toggle="yes">sir&#x02010;2.2</italic> KD did not alter animal survival or healthspan, loss of <italic toggle="yes">sir&#x02010;2.2</italic> blocked ZA's life extending properties but ZA&#x02010;induced healthspan extension remained (<italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0005" ref-type="fig">5C</xref>). Additionally, and in line with previous reports in <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">C.&#x000a0;elegans</italic>
+</styled-content>,<xref rid="jcsm13335-bib-0033" ref-type="bibr">
+<sup>33</sup>
+</xref> we find that knockdown of <italic toggle="yes">sir&#x02010;2.3</italic> extends lifespan (<italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0005" ref-type="fig">5D</xref>) and healthspan (<italic toggle="yes">Figure</italic>
+<xref rid="jcsm13335-fig-0005" ref-type="fig">5H</xref>), which remains with combined ZA treatment but is not synergistically beneficial.</p></sec></sec><sec sec-type="discussion" id="jcsm13335-sec-0015"><title>Discussion</title><p>Despite the socio&#x02010;economic implications, treatment options for sarcopenia remain mostly limited to modifiable lifestyle changes such as diet and exercise, which are incompletely effective.<xref rid="jcsm13335-bib-0034" ref-type="bibr">
+<sup>34</sup>
+</xref> Complementary drug interventions would, therefore, benefit a significant portion of the ageing population, yet effectual compounds that are safe for long&#x02010;term use remain elusive. Identifying drugs in clinical use and repurposing for sarcopenia indications could provide immediately exploitable pharmaceuticals for the general population. Bisphosphonates have been used to safely treat osteoporosis for decades.<xref rid="jcsm13335-bib-0035" ref-type="bibr">
+<sup>35</sup>
+</xref> Here, we report that bisphosphonates (ZA) extend <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">C.&#x000a0;elegans</italic>
+</styled-content> lifespan and healthspan, which associates with delayed onset of muscle sarcomere and mitochondrial decline. While general stress response pathways, such as FOXO, regulate these positive healthspan responses to ZA, we establish muscle&#x02010;centric myokines (<italic toggle="yes">agxt&#x02010;2</italic> and <italic toggle="yes">igdb&#x02010;1</italic>) and mitochondrial sirtuin (<italic toggle="yes">sir&#x02010;2.3</italic>) as previously unknown regulators of bisphosphonate effects on ageing muscle health.</p><p>Growing pre&#x02010;clinical<xref rid="jcsm13335-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref>, <xref rid="jcsm13335-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref>, <xref rid="jcsm13335-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> and human<xref rid="jcsm13335-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref> evidence suggest that bisphosphonates not only preserve bone integrity but also exert muscle promoting effects across a variety of conditions. A recent study in fruit flies suggest similar effects might extend to the ageing process, where bisphosphonate treatment prolonged lifespan and animal healthspan.<xref rid="jcsm13335-bib-0021" ref-type="bibr">
+<sup>21</sup>
+</xref> We provide the first <italic toggle="yes">in vivo</italic> evidence for a direct role of chronic bisphosphonate administration in delaying age&#x02010;related muscle structural decline. Because ageing muscle architectural alterations are a hallmark of human sarcopenia that relate to lowered motility in animals,<xref rid="jcsm13335-bib-0022" ref-type="bibr">
+<sup>22</sup>
+</xref> bisphosphonate&#x02010;mediated sarcomere preservation could translate to reduced sarcopenia in higher animals and people. ZA also attenuated ageing muscle mitochondrial decline. Mitochondrial health is strongly linked with sarcopenic progression across species and mitochondrial structure corresponds with oxidative function<xref rid="jcsm13335-bib-0023" ref-type="bibr">
+<sup>23</sup>
+</xref>; therefore, bisphosphonates might hold dual, and possibly interrelated, efficacy for maintaining muscle metabolic health and sarcomeric integrity. While we assessed animals at, and beyond, the point of onset of age&#x02010;related sub&#x02010;muscular decline, the anti&#x02010;sarcopenic efficacy of bisphosphonates into very old age remains to be determined. Nonetheless, using our microfluidic healthspan device<xref rid="jcsm13335-bib-0027" ref-type="bibr">
+<sup>27</sup>
+</xref> and animal movement rate as a robust index of health,<xref rid="jcsm13335-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref> we demonstrate that early&#x02010; to mid&#x02010;life muscle preservation translates to improved animal health across the entire life course. Bisphosphonates thus represent a promising strategy for maintaining muscle, and whole animal health into older age.</p><p>In fruit flies, bisphosphonates increase lifespan through inhibition of the mevalonate metabolic pathway and downstream FOXO activation.<xref rid="jcsm13335-bib-0021" ref-type="bibr">
+<sup>21</sup>
+</xref> We extend this by implicating the mevalonate&#x02010;FOXO system as necessary for bisphosphonate&#x02010;mediated health improvements across the life course. The sterol and non&#x02010;sterol isoprenoids synthesized via mevalonate localize to plasma membranes and influence several vital cellular processes, the dysfunction of which associate with wide ranging pathologies including cardiovascular disease, autoimmune disease, cancer and Alzheimer's disease.<xref rid="jcsm13335-bib-0036" ref-type="bibr">
+<sup>36</sup>
+</xref> Our data suggest that sarcopenia can be added to this list, whereby knockdown of a key enzyme in mevalonate metabolism, farnesyl diphosphate synthetase (<italic toggle="yes">fdps&#x02010;1</italic>), allows normal larval development to adulthood and young adult (day 1) movement rates, corroborating earlier reports of normal L4 larvae muscle architecture upon <italic toggle="yes">fdps&#x02010;1</italic> RNAi.<xref rid="jcsm13335-bib-0037" ref-type="bibr">
+<sup>37</sup>
+</xref> Thereafter, downregulation of <italic toggle="yes">fdps&#x02010;1</italic> causes rapid neuromuscular functional decline (i.e., animal motility), likely indicative of accelerated sarcopenia. Because zoledronic acid is unable to improve lifespan and healthspan in <italic toggle="yes">fdps&#x02010;1</italic> or <italic toggle="yes">daf&#x02010;16</italic> knockdown animals, the mevalonate&#x02010;FOXO pathway is strongly implicated in the ageing neuromuscular health benefits of bisphosphonates.</p><p>Bi&#x02010;directional communication between muscle and bone has long been established, including mechanical coupling and endocrine muscle&#x02010;bone signalling.<xref rid="jcsm13335-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref>, <xref rid="jcsm13335-bib-0024" ref-type="bibr">
+<sup>24</sup>
+</xref> We, therefore, examined the mechanistic role of three putative muscle&#x02010;derived signalling factors (&#x02018;myokines&#x02019;) involved in muscle&#x02010;bone crosstalk that exhibit altered age&#x02010;related function.<xref rid="jcsm13335-bib-0024" ref-type="bibr">
+<sup>24</sup>
+</xref> Of these, <italic toggle="yes">agxt&#x02010;2</italic>/BAIBA was necessary for the positive healthspan effects of ZA, while <italic toggle="yes">agxt&#x02010;2</italic> KD alone was not harmful to animal longevity or health. BAIBA promotes insulin sensitivity, anti&#x02010;inflammation<xref rid="jcsm13335-bib-0038" ref-type="bibr">
+<sup>38</sup>
+</xref> and osteocyte survival in mice,<xref rid="jcsm13335-bib-0039" ref-type="bibr">
+<sup>39</sup>
+</xref> and its expression does not decline with age<xref rid="jcsm13335-bib-0039" ref-type="bibr">
+<sup>39</sup>
+</xref>; thus, BAIBA&#x02010;mediated muscle/health benefits of bisphosphonates would be anticipated to remain in older age. Knockdown of <italic toggle="yes">igdb&#x02010;1</italic>/FNDC5 extended worm lifespan and healthspan, countering human studies implicating low circulating FNDC5 as a sarcopenia biomarker.<xref rid="jcsm13335-bib-0040" ref-type="bibr">
+<sup>40</sup>
+</xref> The healthspan effects of <italic toggle="yes">igdb&#x02010;1</italic> KD were also comparable with ZA co&#x02010;treatment. This inability of <italic toggle="yes">idgb&#x02010;1</italic> KD to neither ablate nor synergistically augment the positive effects of ZA could be interpreted as ZA exerting healthspan&#x02010;promoting inhibitory effects on <italic toggle="yes">igdb&#x02010;1</italic> or, alternatively, acting through <italic toggle="yes">igdb&#x02010;1</italic> independent pathways. Conversely, <italic toggle="yes">let&#x02010;756</italic>/FGF21 appears dispensable for ZA&#x02010;induced lifespan and healthspan extension. Because <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">C.&#x000a0;elegans</italic>
+</styled-content> lack an endoskeleton, these findings espouse <italic toggle="yes">agxt&#x02010;2</italic>/BAIBA and <italic toggle="yes">igdb&#x02010;1</italic>/FNDC5 as muscle&#x02010;intrinsic, bone&#x02010;independent mechanisms of bisphosphonate action on improving sarcopenia.</p><p>Recent rodent work showed that bisphosphonates attenuate denervation atrophy by down&#x02010;regulating sirtuin&#x02010;3 (SIRT3),<xref rid="jcsm13335-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> a mitochondrially localized NAD+&#x02010;dependent deacetylase with important roles in regulating skeletal muscle metabolism. We observed that knocking&#x02010;down a <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">C.&#x000a0;elegans</italic>
+</styled-content> mitochondrial sirtuin, <italic toggle="yes">sir&#x02010;2.3</italic>, improved life&#x02010; and healthspan, whereas mitochondrial <italic toggle="yes">sir&#x02010;2.2</italic> KD had no effect, as reported by others.<xref rid="jcsm13335-bib-0033" ref-type="bibr">
+<sup>33</sup>
+</xref> Because <italic toggle="yes">sir&#x02010;2.3</italic> KD with combined ZA was neither inhibitory nor synergistically beneficial to lifespan or healthspan, this supports the model of bisphosphonate&#x02010;mediated mitochondrial sirtuin inhibition as a regulator of mammalian muscle health<xref rid="jcsm13335-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> and now sarcopenia. Loss of <italic toggle="yes">sir&#x02010;2.2</italic> was, however, dispensable for the positive effects of ZA. Along with improved mitochondrial structure observed herein, growing evidence thus suggests that bisphosphonates act at least partially through mitochondrial mechanisms to lessen the effects of sarcopenia.</p><p>In conclusion, chronic bisphosphonate administration delays the onset of muscle structural and mitochondrial decline in a <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">C.&#x000a0;elegans</italic>
+</styled-content> model of sarcopenia, and this translates to improved animal health across the entire life course. The mechanisms regulating the positive ageing/muscle effects of bisphosphonates appear to be conserved across species and include the mevalonate&#x02010;FOXO metabolic axis, mitochondrial sirtuins and muscle&#x02010;derived cytokines. Because worms lack an endoskeleton, these mechanisms of bisphosphonates can also be muscle&#x02010;intrinsic. By directly implicating bisphosphonates in attenuating the consequences of sarcopenia, this study adds to a growing body of evidence that bisphosphonates are a clinically safe, immediately exploitable anti&#x02010;sarcopenia therapeutic.</p></sec><sec sec-type="COI-statement" id="jcsm13335-sec-0017"><title>Conflict of interest</title><p>The authors declare no competing interests.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="jcsm13335-supitem-0001" position="float" content-type="local-data"><caption><p>
+<bold>Figure S1.</bold> Representative images for muscle (<italic toggle="no">myo&#x02010;3</italic>::GFP) and mitochondrial (<italic toggle="no">mito</italic>::GFP) structural classifications. All images that compose data from figures 2 and 3 (and supplemental figures 1 and 2) were scored into three categories in accordance with the above representative images.</p></caption><media xlink:href="JCSM-14-2613-s001.jpg"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material id="jcsm13335-supitem-0002" position="float" content-type="local-data"><caption><p>
+<bold>Figure S2.</bold> Mitochondrial decline in day 2 adults. Both untreated and ZA treated (1&#x000a0;&#x003bc;M) animals display significant mitochondrial decline by day 2 post&#x02010;adulthood, and is not restored with ZA treatments. &#x000a5; denotes significant loss of myofibrillar structure for within&#x02010;condition comparisons <italic toggle="no">vs</italic>. day 0 values (&#x000a5;&#x000a5;&#x000a5; <italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.001, &#x000a5;&#x000a5;&#x000a5;&#x000a5; <italic toggle="no">P</italic>&#x000a0;&#x0003c;&#x000a0;0.0001).</p></caption><media xlink:href="JCSM-14-2613-s002.jpg"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material id="jcsm13335-supitem-0003" position="float" content-type="local-data"><caption><p>
+<bold>Figure S3.</bold> Mitochondrial structure with <italic toggle="no">sir&#x02010;2.2</italic> and <italic toggle="no">sir&#x02010;2.3</italic> RNAi. Both <italic toggle="no">sir&#x02010;2.2</italic> and <italic toggle="no">sir&#x02010;2.3</italic> display mitochondrial integrity deficits as early as day 0 of adulthood, supporting their role as mitochondrial sirtuins.</p></caption><media xlink:href="JCSM-14-2613-s003.jpg"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="jcsm13335-sec-0016"><title>Acknowledgements</title><p>L.S. was supported by the United Mitochondrial Disease Foundation Grant PI&#x02010;19&#x02010;0985 and the University of Exeter Diamond Jubilee Scholarship, and L.S. and T.E. were supported by the US Army Research Office (74014&#x02010;LS). S.E.B., J.J.B., P.J.A., B.E.P., K.S. and D.J.W. were supported by the Medical Research Council, UK (grant no. MR/P021220/1) as part of the MRC&#x02010;Versus Arthritis Centre for Musculoskeletal Ageing Research awarded to the Universities of Nottingham and Birmingham, and the National Institute for Health Research (NIHR), Nottingham Biomedical Research Centre, UK. N.J.S. was supported by grants from NASA (NSSC22K0250 and NSSC22K0278) and acknowledges the support of the Osteopathic Heritage Foundation through funding for the Osteopathic Heritage Foundation Ralph S. Licklider, D.O., Research Endowment in the Heritage College of Osteopathic Medicine.</p></ack><ref-list id="jcsm13335-bibl-0001" content-type="cited-references"><title>References</title><ref id="jcsm13335-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0002">
+<string-name>
+<surname>Shafiee</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Keshtkar</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Soltani</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Ahadi</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Larijani</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Heshmat</surname>
+<given-names>R</given-names>
+</string-name>. <article-title>Prevalence of sarcopenia in the world: a systematic review and meta&#x02010; analysis of general population studies</article-title>. <source>J Diabetes Metab Disord</source>
+<year>2017</year>;<volume>16</volume>:<fpage>21</fpage>.<pub-id pub-id-type="pmid">28523252</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0003">
+<string-name>
+<surname>Pacifico</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Geerlings</surname>
+<given-names>MAJ</given-names>
+</string-name>, <string-name>
+<surname>Reijnierse</surname>
+<given-names>EM</given-names>
+</string-name>, <string-name>
+<surname>Phassouliotis</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Lim</surname>
+<given-names>WK</given-names>
+</string-name>, <string-name>
+<surname>Maier</surname>
+<given-names>AB</given-names>
+</string-name>. <article-title>Prevalence of sarcopenia as a comorbid disease: a systematic review and meta&#x02010;analysis</article-title>. <source>Exp Gerontol</source>
+<year>2020</year>;<volume>131</volume>:<elocation-id>110801</elocation-id>.<pub-id pub-id-type="pmid">31887347</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0004">
+<string-name>
+<surname>Pinedo&#x02010;Villanueva</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Westbury</surname>
+<given-names>LD</given-names>
+</string-name>, <string-name>
+<surname>Syddall</surname>
+<given-names>HE</given-names>
+</string-name>, <string-name>
+<surname>Sanchez&#x02010;Santos</surname>
+<given-names>MT</given-names>
+</string-name>, <string-name>
+<surname>Dennison</surname>
+<given-names>EM</given-names>
+</string-name>, <string-name>
+<surname>Robinson</surname>
+<given-names>SM</given-names>
+</string-name>, et al. <article-title>Health care costs associated with muscle weakness: a UK population&#x02010;based estimate</article-title>. <source>Calcif Tissue Int</source>
+<year>2019</year>;<volume>104</volume>:<fpage>137</fpage>&#x02013;<lpage>144</lpage>.<pub-id pub-id-type="pmid">30244338</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0005">
+<string-name>
+<surname>Liu</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Hao</surname>
+<given-names>Q</given-names>
+</string-name>, <string-name>
+<surname>Hai</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Cao</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Dong</surname>
+<given-names>B</given-names>
+</string-name>. <article-title>Sarcopenia as a predictor of all&#x02010;cause mortality among community&#x02010;dwelling older people: a systematic review and meta&#x02010;analysis</article-title>. <source>Maturitas</source>
+<year>2017</year>;<volume>103</volume>:<fpage>16</fpage>&#x02013;<lpage>22</lpage>.<pub-id pub-id-type="pmid">28778327</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0006">
+<string-name>
+<surname>Wu</surname>
+<given-names>PY</given-names>
+</string-name>, <string-name>
+<surname>Huang</surname>
+<given-names>KS</given-names>
+</string-name>, <string-name>
+<surname>Chen</surname>
+<given-names>KM</given-names>
+</string-name>, <string-name>
+<surname>Chou</surname>
+<given-names>CP</given-names>
+</string-name>, <string-name>
+<surname>Tu</surname>
+<given-names>YK</given-names>
+</string-name>. <article-title>Exercise, nutrition, and combined exercise and nutrition in older adults with sarcopenia: a systematic review and network meta&#x02010;analysis</article-title>. <source>Maturitas</source>
+<year>2021</year>;<volume>145</volume>:<fpage>38</fpage>&#x02013;<lpage>48</lpage>.<pub-id pub-id-type="pmid">33541561</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0007">
+<string-name>
+<surname>Brook</surname>
+<given-names>MS</given-names>
+</string-name>, <string-name>
+<surname>Wilkinson</surname>
+<given-names>DJ</given-names>
+</string-name>, <string-name>
+<surname>Mitchell</surname>
+<given-names>WK</given-names>
+</string-name>, <string-name>
+<surname>Lund</surname>
+<given-names>JN</given-names>
+</string-name>, <string-name>
+<surname>Phillips</surname>
+<given-names>BE</given-names>
+</string-name>, <string-name>
+<surname>Szewczyk</surname>
+<given-names>NJ</given-names>
+</string-name>, et al. <article-title>Synchronous deficits in cumulative muscle protein synthesis and ribosomal biogenesis underlie age&#x02010;related anabolic resistance to exercise in humans</article-title>. <source>J Physiol</source>
+<year>2016</year>;<volume>594</volume>:<fpage>7399</fpage>&#x02013;<lpage>7417</lpage>.<pub-id pub-id-type="pmid">27654940</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0007"><label>7</label><mixed-citation publication-type="miscellaneous" id="jcsm13335-cit-0008">
+<collab collab-type="authors">AgeUK</collab>
+. <article-title>Later life in the United Kingdom</article-title>. <year>2019</year>. p. 12.</mixed-citation></ref><ref id="jcsm13335-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0009">
+<string-name>
+<surname>Lin</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Salech</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Lim</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Vogrin</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Duque</surname>
+<given-names>G</given-names>
+</string-name>. <article-title>The effect of rapamycin and its analogues on age&#x02010;related musculoskeletal diseases: a systematic review</article-title>. <source>Aging Clin Exp Res</source>
+<year>2022</year>;<volume>34</volume>:<fpage>2317</fpage>&#x02013;<lpage>2333</lpage>.<pub-id pub-id-type="pmid">35861940</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0010">
+<string-name>
+<surname>Waldner</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Fantus</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Solari</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Thomson</surname>
+<given-names>AW</given-names>
+</string-name>. <article-title>New perspectives on mTOR inhibitors (rapamycin, rapalogs and TORKinibs) in transplantation</article-title>. <source>Br J Clin Pharmacol</source>
+<year>2016</year>;<volume>82</volume>:<fpage>1158</fpage>&#x02013;<lpage>1170</lpage>.<pub-id pub-id-type="pmid">26810941</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0011">
+<string-name>
+<surname>Morita</surname>
+<given-names>JI</given-names>
+</string-name>, <string-name>
+<surname>Yasui</surname>
+<given-names>T</given-names>
+</string-name>. <article-title>Subcellular localization of inorganic pyrophosphatases in rabbit skeletal muscle and some properties of a microsomal acid pyrophosphatase</article-title>. <source>Agric Biol Chem</source>
+<year>1985</year>;<volume>49</volume>:<fpage>1397</fpage>&#x02013;<lpage>1403</lpage>.</mixed-citation></ref><ref id="jcsm13335-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0012">
+<string-name>
+<surname>Fleisch</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Russell</surname>
+<given-names>RG</given-names>
+</string-name>, <string-name>
+<surname>Straumann</surname>
+<given-names>F</given-names>
+</string-name>. <article-title>Effect of pyrophosphate on hydroxyapatite and its implications in calcium homeostasis</article-title>. <source>Nature</source>
+<year>1966</year>;<volume>212</volume>:<fpage>901</fpage>&#x02013;<lpage>903</lpage>.<pub-id pub-id-type="pmid">4306793</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0013">
+<string-name>
+<surname>Drake</surname>
+<given-names>MT</given-names>
+</string-name>, <string-name>
+<surname>Clarke</surname>
+<given-names>BL</given-names>
+</string-name>, <string-name>
+<surname>Khosla</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Bisphosphonates: mechanism of action and role in clinical practice</article-title>. <source>Mayo Clin Proc</source>
+<year>2008</year>;<volume>83</volume>:<fpage>1032</fpage>&#x02013;<lpage>1045</lpage>.<pub-id pub-id-type="pmid">18775204</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0014">
+<string-name>
+<surname>Kirk</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Zanker</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Duque</surname>
+<given-names>G</given-names>
+</string-name>. <article-title>Osteosarcopenia: epidemiology, diagnosis, and treatment&#x02010;facts and numbers</article-title>. <source>J Cachexia Sarcopenia Muscle</source>
+<year>2020</year>;<volume>11</volume>:<fpage>609</fpage>&#x02013;<lpage>618</lpage>.<pub-id pub-id-type="pmid">32202056</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0015">
+<string-name>
+<surname>Walsh</surname>
+<given-names>MC</given-names>
+</string-name>, <string-name>
+<surname>Hunter</surname>
+<given-names>GR</given-names>
+</string-name>, <string-name>
+<surname>Livingstone</surname>
+<given-names>MB</given-names>
+</string-name>. <article-title>Sarcopenia in premenopausal and postmenopausal women with osteopenia, osteoporosis and normal bone mineral density</article-title>. <source>Osteoporos Int</source>
+<year>2006</year>;<volume>17</volume>:<fpage>61</fpage>&#x02013;<lpage>67</lpage>.<pub-id pub-id-type="pmid">15995793</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0016">
+<string-name>
+<surname>Park</surname>
+<given-names>JH</given-names>
+</string-name>, <string-name>
+<surname>Park</surname>
+<given-names>KH</given-names>
+</string-name>, <string-name>
+<surname>Cho</surname>
+<given-names>SH</given-names>
+</string-name>, <string-name>
+<surname>Choi</surname>
+<given-names>YS</given-names>
+</string-name>, <string-name>
+<surname>Seo</surname>
+<given-names>SK</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>BS</given-names>
+</string-name>, et al. <article-title>Concomitant increase in muscle strength and bone mineral density with decreasing IL&#x02010;6 levels after combination therapy with alendronate and calcitriol in postmenopausal women</article-title>. <source>Menopause</source>
+<year>2013</year>;<volume>20</volume>:<fpage>747</fpage>&#x02013;<lpage>753</lpage>.<pub-id pub-id-type="pmid">23511701</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0017">
+<string-name>
+<surname>Harada</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Ito</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Matsui</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Sakai</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Takemura</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Tokuda</surname>
+<given-names>H</given-names>
+</string-name>, et al. <article-title>Effect of alendronate on muscle mass: investigation in patients with osteoporosis</article-title>. <source>Osteoporos Sarcopenia</source>
+<year>2015</year>;<volume>1</volume>:<fpage>53</fpage>&#x02013;<lpage>58</lpage>.</mixed-citation></ref><ref id="jcsm13335-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0018">
+<string-name>
+<surname>Hain</surname>
+<given-names>BA</given-names>
+</string-name>, <string-name>
+<surname>Jude</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Xu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Smuin</surname>
+<given-names>DM</given-names>
+</string-name>, <string-name>
+<surname>Fox</surname>
+<given-names>EJ</given-names>
+</string-name>, <string-name>
+<surname>Elfar</surname>
+<given-names>JC</given-names>
+</string-name>, et al. <article-title>Zoledronic acid improves muscle function in healthy mice treated with chemotherapy</article-title>. <source>J Bone Miner Res</source>
+<year>2020</year>;<volume>35</volume>:<fpage>368</fpage>&#x02013;<lpage>381</lpage>.<pub-id pub-id-type="pmid">31614017</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0019">
+<string-name>
+<surname>Yoon</surname>
+<given-names>SH</given-names>
+</string-name>, <string-name>
+<surname>Sugamori</surname>
+<given-names>KS</given-names>
+</string-name>, <string-name>
+<surname>Grynpas</surname>
+<given-names>MD</given-names>
+</string-name>, <string-name>
+<surname>Mitchell</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>Positive effects of bisphosphonates on bone and muscle in a mouse model of Duchenne muscular dystrophy</article-title>. <source>Neuromuscul Disord</source>
+<year>2016</year>;<volume>26</volume>:<fpage>73</fpage>&#x02013;<lpage>84</lpage>.<pub-id pub-id-type="pmid">26494410</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0020">
+<string-name>
+<surname>Chiu</surname>
+<given-names>HC</given-names>
+</string-name>, <string-name>
+<surname>Chiu</surname>
+<given-names>CY</given-names>
+</string-name>, <string-name>
+<surname>Yang</surname>
+<given-names>RS</given-names>
+</string-name>, <string-name>
+<surname>Chan</surname>
+<given-names>DC</given-names>
+</string-name>, <string-name>
+<surname>Liu</surname>
+<given-names>SH</given-names>
+</string-name>, <string-name>
+<surname>Chiang</surname>
+<given-names>CK</given-names>
+</string-name>. <article-title>Preventing muscle wasting by osteoporosis drug alendronate in vitro and in myopathy models via sirtuin&#x02010;3 down&#x02010;regulation</article-title>. <source>J Cachexia Sarcopenia Muscle</source>
+<year>2018</year>;<volume>9</volume>:<fpage>585</fpage>&#x02013;<lpage>602</lpage>.<pub-id pub-id-type="pmid">29512306</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0021">
+<string-name>
+<surname>Huang</surname>
+<given-names>CF</given-names>
+</string-name>, <string-name>
+<surname>Shiao</surname>
+<given-names>MS</given-names>
+</string-name>, <string-name>
+<surname>Mao</surname>
+<given-names>TY</given-names>
+</string-name>. <article-title>Retrospective study of the effects of zoledronic acid on muscle mass in osteoporosis patients</article-title>. <source>Drug Des Devel Ther</source>
+<year>2021</year>;<volume>15</volume>:<fpage>3711</fpage>&#x02013;<lpage>3715</lpage>.</mixed-citation></ref><ref id="jcsm13335-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0022">
+<string-name>
+<surname>Chen</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Cordero</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Alqarni</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name>
+<surname>Slack</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Zeidler</surname>
+<given-names>MP</given-names>
+</string-name>, <string-name>
+<surname>Bellantuono</surname>
+<given-names>I</given-names>
+</string-name>. <article-title>Zoledronate extends health span and survival via the mevalonate pathway in a FOXO&#x02010;dependent manner</article-title>. <source>J Gerontol A Biol Sci Med Sci</source>
+<year>2022</year>;<volume>77</volume>:<fpage>1494</fpage>&#x02013;<lpage>1502</lpage>.<pub-id pub-id-type="pmid">34137822</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0023">
+<string-name>
+<surname>Gaffney</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Pollard</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Barratt</surname>
+<given-names>TF</given-names>
+</string-name>, <string-name>
+<surname>Constantin&#x02010;Teodosiu</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Greenhaff</surname>
+<given-names>PL</given-names>
+</string-name>, <string-name>
+<surname>Szewczyk</surname>
+<given-names>NJ</given-names>
+</string-name>. <article-title>Greater loss of mitochondrial function with ageing is associated with earlier onset of sarcopenia in <italic toggle="yes">C. elegans</italic>
+</article-title>. <source>Aging (Albany NY)</source>
+<year>2018</year>;<volume>10</volume>:<fpage>3382</fpage>&#x02013;<lpage>3396</lpage>.<pub-id pub-id-type="pmid">30455409</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0024">
+<string-name>
+<surname>Etheridge</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Rahman</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Gaffney</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Shaw</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Shephard</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Magudia</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>The integrin&#x02010;adhesome is required to maintain muscle structure, mitochondrial ATP production, and movement forces in Caenorhabditis elegans</article-title>. <source>FASEB J</source>
+<year>2015</year>;<volume>29</volume>:<fpage>1235</fpage>&#x02013;<lpage>1246</lpage>.<pub-id pub-id-type="pmid">25491313</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0025">
+<string-name>
+<surname>He</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>He</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Hou</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Chen</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Huang</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Yang</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Bone and muscle crosstalk in aging</article-title>. <source>Front Cell Dev Biol</source>
+<year>2020</year>;<volume>8</volume>:<elocation-id>585644</elocation-id>.<pub-id pub-id-type="pmid">33363144</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0026">
+<string-name>
+<surname>Bansal</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Zhu</surname>
+<given-names>LJ</given-names>
+</string-name>, <string-name>
+<surname>Yen</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Tissenbaum</surname>
+<given-names>HA</given-names>
+</string-name>. <article-title>Uncoupling lifespan and healthspan in <italic toggle="yes">Caenorhabditis elegans</italic> longevity mutants</article-title>. <source>Proc Natl Acad Sci U S A</source>
+<year>2015</year>;<volume>112</volume>:<fpage>E277</fpage>&#x02013;<lpage>E286</lpage>.<pub-id pub-id-type="pmid">25561524</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0027">
+<string-name>
+<surname>Ellwood</surname>
+<given-names>RA</given-names>
+</string-name>, <string-name>
+<surname>Slade</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Lewis</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Torregrossa</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Sudevan</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Piasecki</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Sulfur amino acid supplementation displays therapeutic potential in a <italic toggle="yes">C. elegans</italic> model of Duchenne muscular dystrophy</article-title>. <source>Commun Biol</source>
+<year>2022</year>;<volume>5</volume>:<fpage>1255</fpage>.<pub-id pub-id-type="pmid">36385509</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0028">
+<string-name>
+<surname>Rahman</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Edwards</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Birze</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Gabrilska</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Rumbaugh</surname>
+<given-names>KP</given-names>
+</string-name>, <string-name>
+<surname>Blawzdziewicz</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>NemaLife chip: a micropillar&#x02010;based microfluidic culture device optimized for aging studies in crawling <italic toggle="yes">C. elegans</italic>
+</article-title>. <source>Sci Rep</source>
+<year>2020</year>;<volume>10</volume>:<elocation-id>16190</elocation-id>.<pub-id pub-id-type="pmid">33004810</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0029">
+<string-name>
+<surname>Farina</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Lambert</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Commeau</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Lejeune</surname>
+<given-names>FX</given-names>
+</string-name>, <string-name>
+<surname>Roudier</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Fonte</surname>
+<given-names>C</given-names>
+</string-name>, et al. <article-title>The stress response factor daf&#x02010;16/FOXO is required for multiple compound families to prolong the function of neurons with Huntington's disease</article-title>. <source>Sci Rep</source>
+<year>2017</year>;<volume>7</volume>:<fpage>4014</fpage>.<pub-id pub-id-type="pmid">28638078</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0030">
+<string-name>
+<surname>Sun</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Chen</surname>
+<given-names>WD</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>YD</given-names>
+</string-name>. <article-title>DAF&#x02010;16/FOXO transcription factor in aging and longevity</article-title>. <source>Front Pharmacol</source>
+<year>2017</year>;<volume>8</volume>:<fpage>548</fpage>.<pub-id pub-id-type="pmid">28878670</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0031">
+<string-name>
+<surname>Kitase</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Vallejo</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Gutheil</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Vemula</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>J&#x000e4;hn</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Yi</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>Beta&#x02010;aminoisobutyric acid, l&#x02010;BAIBA, is a muscle&#x02010;derived osteocyte survival factor</article-title>. <source>Cell Rep</source>
+<year>2018</year>;<volume>22</volume>:<fpage>1531</fpage>&#x02013;<lpage>1544</lpage>.<pub-id pub-id-type="pmid">29425508</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0032">
+<string-name>
+<surname>Marcus</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Andrabi</surname>
+<given-names>SA</given-names>
+</string-name>. <article-title>SIRT3 Regulation under cellular stress: making sense of the ups and downs</article-title>. <source>Front Neurosci</source>
+<year>2018</year>;<volume>12</volume>:<fpage>799</fpage>.<pub-id pub-id-type="pmid">30450031</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0033">
+<string-name>
+<surname>Wirth</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Karaca</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Wenzel</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Ho</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Tishkoff</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Lombard</surname>
+<given-names>DB</given-names>
+</string-name>, et al. <article-title>Mitochondrial SIRT4&#x02010;type proteins in <italic toggle="yes">Caenorhabditis elegans</italic> and mammals interact with pyruvate carboxylase and other acetylated biotin&#x02010;dependent carboxylases</article-title>. <source>Mitochondrion</source>
+<year>2013</year>;<volume>13</volume>:<fpage>705</fpage>&#x02013;<lpage>720</lpage>.<pub-id pub-id-type="pmid">23438705</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0033"><label>33</label><mixed-citation publication-type="miscellaneous" id="jcsm13335-cit-0034">
+<string-name>
+<surname>Chang</surname>
+<given-names>SM</given-names>
+</string-name>, <string-name>
+<surname>McReynolds</surname>
+<given-names>MR</given-names>
+</string-name>, <string-name>
+<surname>Hanna&#x02010;Rose</surname>
+<given-names>W</given-names>
+</string-name>. <article-title>Mitochondrial sirtuins sir&#x02010;2.2 and sir&#x02010;2.3 regulate lifespan in <styled-content style="fixed-case" toggle="no">C. elegans</styled-content> bioRxiv</article-title>
+<year>2017</year>.</mixed-citation></ref><ref id="jcsm13335-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0035">
+<string-name>
+<surname>Phillips</surname>
+<given-names>BE</given-names>
+</string-name>, <string-name>
+<surname>Williams</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Greenhaff</surname>
+<given-names>PL</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Atherton</surname>
+<given-names>PJ</given-names>
+</string-name>. <article-title>Physiological adaptations to resistance exercise as a function of age</article-title>. <source>JCI Insight</source>
+<year>2017</year>;<volume>2</volume>.</mixed-citation></ref><ref id="jcsm13335-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0036">
+<string-name>
+<surname>Ott</surname>
+<given-names>SM</given-names>
+</string-name>. <article-title>Long&#x02010;term safety of bisphosphonates</article-title>. <source>J Clin Endocrinol Metab</source>
+<year>2005</year>;<volume>90</volume>:<fpage>1897</fpage>&#x02013;<lpage>1899</lpage>.<pub-id pub-id-type="pmid">15758064</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0037">
+<string-name>
+<surname>Buhaescu</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Izzedine</surname>
+<given-names>H</given-names>
+</string-name>. <article-title>Mevalonate pathway: a review of clinical and therapeutical implications</article-title>. <source>Clin Biochem</source>
+<year>2007</year>;<volume>40</volume>:<fpage>575</fpage>&#x02013;<lpage>584</lpage>.<pub-id pub-id-type="pmid">17467679</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0038">
+<string-name>
+<surname>Zuela</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Zwerger</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Levin</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Medalia</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Gruenbaum</surname>
+<given-names>Y</given-names>
+</string-name>. <article-title>Impaired mechanical response of an EDMD mutation leads to motility phenotypes that are repaired by loss of prenylation</article-title>. <source>J Cell Sci</source>
+<year>2016</year>;<volume>129</volume>:<fpage>1781</fpage>&#x02013;<lpage>1791</lpage>.<pub-id pub-id-type="pmid">27034135</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0039">
+<string-name>
+<surname>Jung</surname>
+<given-names>TW</given-names>
+</string-name>, <string-name>
+<surname>Hwang</surname>
+<given-names>HJ</given-names>
+</string-name>, <string-name>
+<surname>Hong</surname>
+<given-names>HC</given-names>
+</string-name>, <string-name>
+<surname>Yoo</surname>
+<given-names>HJ</given-names>
+</string-name>, <string-name>
+<surname>Baik</surname>
+<given-names>SH</given-names>
+</string-name>, <string-name>
+<surname>Choi</surname>
+<given-names>KM</given-names>
+</string-name>. <article-title>BAIBA attenuates insulin resistance and inflammation induced by palmitate or a high fat diet via an AMPK&#x02010;PPARdelta&#x02010;dependent pathway in mice</article-title>. <source>Diabetologia</source>
+<year>2015</year>;<volume>58</volume>:<fpage>2096</fpage>&#x02013;<lpage>2105</lpage>.<pub-id pub-id-type="pmid">26105792</pub-id>
+</mixed-citation></ref><ref id="jcsm13335-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0040">
+<string-name>
+<surname>Kitase</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Vallejo</surname>
+<given-names>JA</given-names>
+</string-name>, <string-name>
+<surname>Gutheil</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Vemula</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>J&#x000e4;hn</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Yi</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>&#x003b2;&#x02010;aminoisobutyric acid, L&#x02010;BAIBA, is a muscle&#x02010;derived osteocyte survival factor</article-title>. <source>Cell Rep</source>
+<year>2018</year>;<volume>6</volume>:<fpage>1531</fpage>&#x02013;<lpage>1544</lpage>.</mixed-citation></ref><ref id="jcsm13335-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="jcsm13335-cit-0041">
+<string-name>
+<surname>Chang</surname>
+<given-names>JS</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>TH</given-names>
+</string-name>, <string-name>
+<surname>Nguyen</surname>
+<given-names>TT</given-names>
+</string-name>, <string-name>
+<surname>Park</surname>
+<given-names>KS</given-names>
+</string-name>, <string-name>
+<surname>Kim</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Kong</surname>
+<given-names>ID</given-names>
+</string-name>. <article-title>Circulating irisin levels as a predictive biomarker for sarcopenia: a cross&#x02010;sectional community&#x02010;based study</article-title>. <source>Geriatr Gerontol Int</source>
+<year>2017</year>;<volume>17</volume>:<fpage>2266</fpage>&#x02013;<lpage>2273</lpage>.<pub-id pub-id-type="pmid">28394089</pub-id>
+</mixed-citation></ref></ref-list></back></article>
