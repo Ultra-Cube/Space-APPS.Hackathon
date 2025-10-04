@@ -2,6 +2,21 @@
 
 A semantic search engine for space biology research publications using AI-powered embeddings and vector similarity search.
 
+## 🆕 What's New
+
+**Latest Updates:**
+- ✨ **AI-Powered Summaries**: New `/summarize/{pub_id}` endpoint generates intelligent publication summaries
+- 🎨 **Web Interface**: Beautiful, responsive frontend for easy searching and browsing
+- 🔍 **Smart Search**: JavaScript-powered search with term highlighting and instant results
+- 📱 **Mobile Friendly**: Works seamlessly on desktop, tablet, and mobile devices
+- 📚 **Enhanced Documentation**: Comprehensive guides for quick start, deployment, and features
+
+**Quick Start:**
+1. Install: `pip install -r requirements.txt`
+2. Start: `uvicorn app:app --reload`
+3. Browse: Open `http://localhost:8000` in your browser
+4. Search: Enter a query and explore the results!
+
 ## 🚀 Overview
 
 This project provides a complete pipeline for ingesting, processing, and semantically searching scientific publications related to space biology. It downloads publications from PubMed Central (PMC), extracts their content, generates semantic embeddings, and provides a FastAPI-based search interface.
@@ -75,6 +90,10 @@ Space-APPS.Hackathon/
 ├── app.py                  # FastAPI server for semantic search
 ├── ingest_epmc.py          # Data ingestion pipeline
 ├── requirements.txt        # Python dependencies
+├── frontend/               # Web interface (NEW)
+│   ├── index.html         # Main HTML page
+│   ├── style.css          # Styling
+│   └── search.js          # Search functionality
 └── data/
     ├── chunks_meta.json    # Metadata for each text chunk
     ├── embeddings.npy      # Numpy array of embeddings (929 × 768)
@@ -105,6 +124,13 @@ graph LR
         D --> I[/health]
         D --> J[/search?q=...&k=5]
         D --> K[/pub/PMC_ID]
+        D --> L[/summarize/PMC_ID - NEW]
+    end
+    
+    subgraph "Frontend - NEW"
+        M[Web Interface] --> |Search Queries| J
+        M --> |Summary Requests| L
+        M --> |Publication Requests| K
     end
     
     F --> A
@@ -112,6 +138,8 @@ graph LR
     style B fill:#ffeb99
     style C fill:#99ccff
     style D fill:#99ff99
+    style L fill:#ff9999
+    style M fill:#ff9999
 ```
 
 ## 🛠️ Installation
@@ -177,6 +205,25 @@ The API will be available at `http://localhost:8000`
 - Swagger UI: `http://localhost:8000/docs`
 - ReDoc: `http://localhost:8000/redoc`
 
+### Frontend Web Interface (NEW)
+
+A user-friendly web interface is now available at `http://localhost:8000` when the server is running.
+
+**Features:**
+- 🔍 **Easy Search**: Simple search box with real-time results
+- 📊 **Visual Results**: Clean, card-based result display with scores and metadata
+- 📄 **AI Summaries**: One-click AI-powered summaries of publications
+- 📚 **Full Publications**: View complete publication details
+- 🎯 **Smart Highlighting**: Search terms are highlighted in results
+- 📱 **Responsive Design**: Works on desktop, tablet, and mobile
+
+**How to use:**
+1. Start the API server with `uvicorn app:app --reload`
+2. Open your browser and go to `http://localhost:8000`
+3. Enter your search query (e.g., "bone loss in microgravity")
+4. Click "Search" or press Enter
+5. Browse results and click "View AI Summary" for quick insights
+
 ## 🔍 API Endpoints
 
 ### Health Check
@@ -216,6 +263,28 @@ GET /search?q=bone%20loss%20microgravity&k=5
 ]
 ```
 
+### AI-Powered Summary (NEW)
+```http
+POST /summarize/{pub_id}
+```
+
+**Parameters:**
+- `pub_id` (required): Publication ID (e.g., PMC3630201)
+
+**Response:**
+```json
+{
+  "pub_id": "PMC3630201",
+  "title": "Microgravity induces pelvic bone loss...",
+  "authors": "John Doe, Jane Smith",
+  "year": "2013",
+  "summary": "Title: ...\nAuthors: ...\nYear: ...\n\nAbstract: ...\n\nResults: ...",
+  "full_sections": ["abstract", "introduction", "methods", "results", "discussion"]
+}
+```
+
+**Description:** This endpoint uses AI to generate a concise summary of a publication by extracting key sections including the abstract, results, and conclusions.
+
 ### Get Publication
 ```http
 GET /pub/PMC3630201
@@ -231,6 +300,9 @@ curl "http://localhost:8000/search?q=bone%20loss%20in%20space&k=5"
 
 # Search for radiation effects
 curl "http://localhost:8000/search?q=radiation%20exposure%20astronauts&k=10"
+
+# Get AI-powered summary of a publication
+curl -X POST "http://localhost:8000/summarize/PMC3630201"
 
 # Get specific publication
 curl "http://localhost:8000/pub/PMC3630201"
