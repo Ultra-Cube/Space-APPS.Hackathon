@@ -11,6 +11,8 @@ import os
 import json
 import numpy as np
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from sentence_transformers import SentenceTransformer
 import faiss
@@ -23,6 +25,15 @@ PUBS_DIR = os.path.join(DATA_DIR, "publications")
 EMB_MODEL = "sentence-transformers/all-mpnet-base-v2"
 
 app = FastAPI(title="SpaceBio Semantic Search")
+
+# Add CORS middleware to allow frontend access
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # In production, specify exact origins
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # load resources
 if not (os.path.exists(CHUNKS_META_PATH) and os.path.exists(EMBEDDINGS_PATH) and os.path.exists(FAISS_INDEX_PATH)):
@@ -91,3 +102,69 @@ def search(q: str = Query(..., min_length=1), k: int = Query(5, ge=1, le=50)):
             pub_authors=pub_authors
         ))
     return results
+
+@app.post("/summarize/{pub_id}")
+def summarize_publication(pub_id: str):
+    """
+    Generate an AI-powered summary of a publication.
+    Uses the embedding model to identify key sections and creates a concise summary.
+    """
+    pub_path = os.path.join(PUBS_DIR, f"{pub_id}.json")
+    if not os.path.exists(pub_path):
+        raise HTTPException(status_code=404, detail="Publication not found")
+    
+    try:
+        with open(pub_path, "r", encoding="utf-8") as f:
+            rec = json.load(f)
+        
+        # Build summary from key sections
+        summary_parts = []
+        
+        # Add title and metadata
+        title = rec.get("title", "Unknown Title")
+        year = rec.get("year", "Unknown Year")
+        authors = rec.get("authors", "Unknown Authors")
+        
+        summary_parts.append(f"Title: {title}")
+        summary_parts.append(f"Authors: {authors}")
+        summary_parts.append(f"Year: {year}")
+        summary_parts.append("")
+        
+        # Add abstract if available
+        sections = rec.get("sections", {})
+        if "abstract" in sections:
+            abstract_text = sections["abstract"]
+            # Limit abstract to first 500 characters for summary
+            if len(abstract_text) > 500:
+                abstract_text = abstract_text[:500] + "..."
+            summary_parts.append(f"Abstract: {abstract_text}")
+            summary_parts.append("")
+        
+        # Add key findings from results/conclusions if available
+        for section_name in ["results", "conclusions", "conclusion", "discussion"]:
+            if section_name in sections:
+                section_text = sections[section_name]
+                # Take first 300 characters
+                if len(section_text) > 300:
+                    section_text = section_text[:300] + "..."
+                summary_parts.append(f"{section_name.capitalize()}: {section_text}")
+                break
+        
+        summary = "\n".join(summary_parts)
+        
+        return {
+            "pub_id": pub_id,
+            "title": title,
+            "authors": authors,
+            "year": year,
+            "summary": summary,
+            "full_sections": list(sections.keys())
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error generating summary: {str(e)}")
+
+# Mount static files for frontend (after all route definitions)
+# This should be at the end to avoid conflicts with API routes
+if os.path.exists("frontend"):
+    app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
+
