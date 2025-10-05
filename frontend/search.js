@@ -411,11 +411,9 @@ async function populateQuickStats() {
     const chunksEl = document.getElementById('statChunks');
     const publicationsEl = document.getElementById('statPublications');
 
-    if (publicationsEl) {
-        publicationsEl.textContent = libraryCollections.length.toString();
+    if (!chunksEl && !publicationsEl) {
+        return;
     }
-
-    if (!chunksEl) return;
 
     try {
         const response = await fetch(`${API_BASE_URL}/health`);
@@ -423,9 +421,34 @@ async function populateQuickStats() {
             throw new Error('Health endpoint unavailable');
         }
         const data = await response.json();
-        chunksEl.textContent = formatNumber(data.n_chunks ?? 0);
+
+        if (chunksEl) {
+            chunksEl.textContent = formatNumber(data.n_chunks ?? 0);
+        }
+
+        if (publicationsEl) {
+            const indexed = data.n_publications_indexed;
+            const cached = data.n_publications_cached;
+
+            if (typeof indexed === 'number') {
+                if (typeof cached === 'number' && cached > indexed) {
+                    publicationsEl.textContent = `${formatNumber(indexed)} / ${formatNumber(cached)}`;
+                    publicationsEl.setAttribute('title', 'Indexed publications / cached publications');
+                } else {
+                    publicationsEl.textContent = formatNumber(indexed);
+                    publicationsEl.removeAttribute('title');
+                }
+            } else {
+                publicationsEl.textContent = '—';
+            }
+        }
     } catch (error) {
-        chunksEl.textContent = '—';
+        if (chunksEl) {
+            chunksEl.textContent = '—';
+        }
+        if (publicationsEl) {
+            publicationsEl.textContent = '—';
+        }
         console.warn('Unable to load quick stats', error);
     }
 }
