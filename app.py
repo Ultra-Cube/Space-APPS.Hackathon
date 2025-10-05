@@ -55,7 +55,18 @@ class SearchHit(BaseModel):
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "n_chunks": len(chunks_meta)}
+    indexed_pub_ids = {meta.get("pub_id") for meta in chunks_meta if meta.get("pub_id")}
+    try:
+        pub_files = [name for name in os.listdir(PUBS_DIR) if name.lower().endswith(".json")]
+    except FileNotFoundError:
+        pub_files = []
+
+    return {
+        "status": "ok",
+        "n_chunks": len(chunks_meta),
+        "n_publications_indexed": len(indexed_pub_ids),
+        "n_publications_cached": len(pub_files),
+    }
 
 @app.get("/pub/{pub_id}")
 def get_pub(pub_id: str):
