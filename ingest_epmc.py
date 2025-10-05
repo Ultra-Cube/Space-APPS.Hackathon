@@ -363,7 +363,7 @@ def main():
     # optional: filter rows with some pmc presence or process all
     # If you want to limit for quick test: pass limit=N to ingest_all
     # records = ingest_all(df, limit=None)  
-    records = ingest_all(df, limit=10)
+    records = ingest_all(df, limit=None)
     print("Total records processed:", len(records))
     # build embeddings & index
     embeddings, meta = build_chunks_and_embeddings(records)
