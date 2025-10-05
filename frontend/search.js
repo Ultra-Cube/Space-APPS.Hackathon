@@ -1,6 +1,8 @@
 // API Base URL - adjust if needed
 const API_BASE_URL = window.location.origin;
 
+const publicationCache = new Map();
+
 const popularQueries = [
     { label: "Bone loss in microgravity", query: "bone loss in microgravity countermeasures" },
     { label: "Space radiation shielding", query: "radiation shielding astronauts" },
@@ -229,46 +231,54 @@ async function viewSummary(pubId) {
  */
 async function viewFullPublication(pubId) {
     try {
-        const response = await fetch(`${API_BASE_URL}/pub/${pubId}`);
-        
-        if (!response.ok) {
-            throw new Error(`Failed to fetch publication: ${response.statusText}`);
+        const data = await loadPublication(pubId);
+        const sourceUrl = extractPublicationUrl(data);
+
+        if (sourceUrl) {
+            window.open(sourceUrl, '_blank', 'noopener');
+            return;
         }
-        
-        const data = await response.json();
-        
-        // Display full publication in modal
-        let sectionsHtml = '<h3>Sections:</h3>';
+
         const sections = data.sections || {};
-        
-        for (const [sectionName, sectionText] of Object.entries(sections)) {
-            sectionsHtml += `
-                <div style="margin-bottom: 20px;">
-                    <h4 style="color: #667eea; text-transform: capitalize; margin-bottom: 10px;">${sectionName}</h4>
-                    <div style="color: #444; line-height: 1.6;">${escapeHtml(sectionText.substring(0, 1000))}${sectionText.length > 1000 ? '...' : ''}</div>
-                </div>
-            `;
+        let sectionsHtml = '';
+
+        if (Object.keys(sections).length === 0) {
+            sectionsHtml = '<p>Sections unavailable in the cached publication. Try accessing the source repository directly.</p>';
+        } else {
+            sectionsHtml = '<h3>Sections:</h3>';
+            for (const [sectionName, sectionText] of Object.entries(sections)) {
+                const snippet = truncateText(sectionText || '', 1000);
+                sectionsHtml += `
+                    <div style="margin-bottom: 20px;">
+                        <h4 style="color: #667eea; text-transform: capitalize; margin-bottom: 10px;">${escapeHtml(sectionName)}</h4>
+                        <div style="color: #444; line-height: 1.6;">${escapeHtml(snippet)}</div>
+                    </div>
+                `;
+            }
         }
-        
+
         const publicationHtml = `
             <h2 class="summary-title">${escapeHtml(data.title || 'Untitled')}</h2>
             <div class="result-metadata" style="margin-bottom: 20px;">
                 <div class="metadata-item">
                     <span class="metadata-label">Year:</span>
-                    <span>${data.year || 'Unknown'}</span>
+                    <span>${escapeHtml(data.year || 'Unknown')}</span>
                 </div>
                 <div class="metadata-item">
                     <span class="metadata-label">Authors:</span>
                     <span>${escapeHtml(data.authors || 'Unknown')}</span>
                 </div>
             </div>
-            <div class="summary-text">${sectionsHtml}</div>
+            <div class="summary-text">
+                <p style="margin-bottom: 16px; color: #555;">Original source link not provided in metadata. Showing cached sections instead.</p>
+                ${sectionsHtml}
+            </div>
         `;
-        
+
         showSummaryModal(publicationHtml, false);
-        
+
     } catch (error) {
-        showSummaryModal(`<div class="error-message">Error loading publication: ${error.message}</div>`, false);
+        showSummaryModal(`<div class="error-message">Error loading publication: ${escapeHtml(error.message)}</div>`, false);
     }
 }
 
@@ -472,7 +482,7 @@ function renderLibraryItems(activeFilter = 'all') {
             </div>
             <div class="library-actions">
                 <button class="btn btn-primary" type="button" onclick="prefillAndSearch('${escapeAttribute(item.query)}')">Search Topic</button>
-                ${item.pubId ? `<button class="btn btn-secondary" type="button" onclick="viewFullPublication('${item.pubId}')">View Publication</button>` : ''}
+                ${item.pubId ? `<button class="btn btn-secondary" type="button" onclick="viewFullPublication('${item.pubId}')">Open Source</button>` : ''}
                 ${item.pubId ? `<button class="btn btn-secondary" type="button" onclick="viewSummary('${item.pubId}')">AI Summary</button>` : ''}
             </div>
         </article>
@@ -486,6 +496,89 @@ function prefillAndSearch(query) {
     performSearch();
 }
 
+async function runAgent() {
+    const questionInput = document.getElementById('agentQuestion');
+    const responsesContainer = document.getElementById('agentResponses');
+
+    if (!questionInput || !responsesContainer) return;
+
+    const query = questionInput.value.trim();
+
+    if (!query) {
+        responsesContainer.innerHTML = `
+            <div class="agent-response-card">
+                <div class="error-message">Please enter a question so the agent can look up relevant passages.</div>
+            </div>
+        `;
+        return;
+    }
+
+    responsesContainer.innerHTML = `
+        <div class="agent-response-card">
+            <div class="agent-loading">
+                <div class="agent-spinner"></div>
+                <span>Scanning publications for "${escapeHtml(query)}"...</span>
+            </div>
+        </div>
+    `;
+
+    try {
+        const response = await fetch(`${API_BASE_URL}/search?q=${encodeURIComponent(query)}&k=6`);
+        if (!response.ok) {
+            throw new Error(`Search failed: ${response.statusText}`);
+        }
+
+        const results = await response.json();
+        if (!Array.isArray(results) || results.length === 0) {
+            responsesContainer.innerHTML = `
+                <div class="agent-response-card">
+                    <p>No matching passages were found. Try adjusting your question or using different keywords.</p>
+                </div>
+            `;
+            return;
+        }
+
+        const topHits = results.slice(0, 3);
+        const enriched = await Promise.all(topHits.map(async hit => {
+            let link = '';
+            let title = hit.pub_title || hit.pub_id;
+            try {
+                const publication = await loadPublication(hit.pub_id);
+                title = publication.title || title;
+                link = extractPublicationUrl(publication) || '';
+            } catch (err) {
+                console.warn('Agent unable to load publication metadata', err);
+            }
+            return { hit, link, title };
+        }));
+
+        responsesContainer.innerHTML = enriched.map(({ hit, link, title }) => {
+            const excerpt = truncateText(hit.excerpt || '', 450);
+            const highlighted = highlightQuery(escapeHtml(excerpt), query);
+            const safeTitle = escapeHtml(title || hit.pub_id);
+            const linkHtml = link
+                ? `<a class="agent-response-link" href="${escapeAttribute(link)}" target="_blank" rel="noopener">🔗 View Source</a>`
+                : `<span class="agent-note">Source link unavailable</span>`;
+
+            return `
+                <div class="agent-response-card">
+                    <div class="agent-response-header">
+                        <div class="agent-response-title">${safeTitle}</div>
+                        ${linkHtml}
+                    </div>
+                    <div class="agent-response-excerpt">${highlighted}</div>
+                </div>
+            `;
+        }).join('');
+    } catch (error) {
+        responsesContainer.innerHTML = `
+            <div class="agent-response-card">
+                <div class="error-message">Agent error: ${escapeHtml(error.message)}</div>
+            </div>
+        `;
+    }
+}
+
 function formatNumber(num) {
     return Number(num).toLocaleString();
 }
@@ -497,8 +590,43 @@ function formatTag(tag) {
         .join(' ');
 }
 
+async function loadPublication(pubId) {
+    if (publicationCache.has(pubId)) {
+        return publicationCache.get(pubId);
+    }
+
+    const response = await fetch(`${API_BASE_URL}/pub/${pubId}`);
+    if (!response.ok) {
+        throw new Error(`Failed to fetch publication: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    publicationCache.set(pubId, data);
+    return data;
+}
+
+function extractPublicationUrl(publication) {
+    if (!publication) return '';
+
+    const candidates = [
+        publication.pmc_url,
+        publication.url,
+        publication.link,
+        publication.doi && publication.doi.startsWith('http') ? publication.doi : publication.doi ? `https://doi.org/${publication.doi}` : '',
+        publication.source_row && (publication.source_row.Link || publication.source_row.URL)
+    ];
+
+    return candidates.find(value => typeof value === 'string' && value.trim().length > 0) || '';
+}
+
+function truncateText(text, limit = 500) {
+    if (!text) return '';
+    if (text.length <= limit) return text;
+    return `${text.slice(0, limit).trimEnd()}...`;
+}
+
 function escapeAttribute(text) {
-    return text
+    return (text || '')
         .replace(/&/g, '&amp;')
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')

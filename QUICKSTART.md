@@ -2,6 +2,8 @@
 
 Get started with SpaceBio Semantic Search in 3 simple steps!
 
+> **Built by the Ultra Cube Team for the NASA Space Apps Challenge 2025.**
+
 ## Step 1: Install Dependencies
 
 ```bash

@@ -10,7 +10,7 @@
     <div class="container">
         <header>
             <h1>🚀 SpaceBio Semantic Search</h1>
-            <p class="subtitle">AI-Powered Search for Space Biology Research</p>
+            <p class="subtitle">AI-Powered Search for Space Biology Research · Crafted by the Ultra Cube Team</p>
         </header>
 
         <div class="search-section">
@@ -43,6 +43,27 @@
         </div>
 
         <div id="resultsContainer"></div>
+
+        <section class="agent-section" id="aiAgent">
+            <div class="agent-header">
+                <h2>Ultra Cube Research Guide</h2>
+                <p>Ask the agent to surface only the parts of publications that matter. Responses are grounded in the original sources curated by the Ultra Cube Team.</p>
+            </div>
+            <div class="agent-interface">
+                <textarea
+                    id="agentQuestion"
+                    rows="3"
+                    placeholder="Ask about countermeasures, mission planning insights, biomarkers, and more..."
+                ></textarea>
+                <div class="agent-controls">
+                    <button class="btn btn-primary" type="button" onclick="runAgent()">🤖 Ask the Agent</button>
+                    <span class="agent-note">The agent only shares verified excerpts from the source publications you request.</span>
+                </div>
+            </div>
+            <div id="agentResponses" class="agent-responses">
+                <div class="agent-placeholder">No questions yet. Ask something to see curated excerpts with source links.</div>
+            </div>
+        </section>
 
         <section class="quick-stats" id="quickStats">
             <div class="stat-card">
@@ -112,7 +133,7 @@
     </div>
 
     <footer class="site-footer">
-        <p>Built for Space Apps Hackathon · Space biology knowledge at your fingertips.</p>
+        <p>Built for Space Apps Hackathon by the Ultra Cube Team · Space biology knowledge at your fingertips.</p>
     </footer>
 
     <script src="search.js"></script>

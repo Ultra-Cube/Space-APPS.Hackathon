@@ -2,6 +2,8 @@
 
 This document describes the new features added to SpaceBio Semantic Search.
 
+> **Built by the Ultra Cube Team for the NASA Space Apps Challenge 2025.**
+
 ## 1. AI-Powered Summary API
 
 ### Endpoint: `POST /summarize/{pub_id}`
