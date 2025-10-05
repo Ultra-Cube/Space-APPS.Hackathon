@@ -420,4 +420,4 @@ For questions or feedback, please open an issue on GitHub.
 
 ---
 
-**Built for NASA Space Apps Hackathon** 🚀🔬
+**Built by the Ultra Cube Team for the NASA Space Apps Challenge 2025.** 🚀🔬
